@@ -2,35 +2,35 @@ body {
   margin: 0;
 }
 
-#headed{
-    background-color: #0a4cc5;
-    width: 100%;
-    display: flex;
-    justify-content: center;
-}
-
-#main-nav {
-  width: 80%;
+.headed {
+  background-color: #0a4cc5;
+  width: 100%;
   display: flex;
   justify-content: center;
+}
+
+.headed__nav {
+  width: 80%;
+  display: flex;
   align-items: center;
   justify-content: space-between;
   height: 101px;
 }
 
-.logo {
+.nav__logo {
   color: #ffffff;
   font-size: 36px;
   font-family: "Bebas Neue", sans-serif;
 }
 
-#navigation-block {
+.nav__list {
   margin: 0px;
-  display:flex;
-  gap:12px;
+  padding: 0px;
+  display: flex;
+  gap: 12px;
 }
 
-.navigation {
+.nav__card {
   list-style-type: none;
   display: inline-block;
   text-align: center;
@@ -39,9 +39,56 @@ body {
   font-weight: bold;
 }
 
-a {
+.nav__link {
   color: #ffffff;
   cursor: pointer;
   text-decoration: none;
   justify-content: space-between;
+}
+
+.space {
+  background-color: #ffffff;
+  width: 100%;
+  height: 25px;
+  display: flex;
+  justify-content: center;
+}
+
+.space_inicio {
+  background-image: url(./img/rodamientos\ fondo\ web.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 400px;
+  justify-content: center;
+  display: flex;
+  align-items: center;
+}
+
+.inicio__contenedor {
+  background-color: #ed7b26;
+  width: 75%;
+  height: 175px;
+  opacity: 90%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.inicio__titulo {
+  color: #1d242d;
+  font-size: 60px;
+  font-family: "Bebas Neue", sans-serif;
+  font-weight: regular;
+  margin: 0;
+}
+
+.subtitulo__eslogan {
+  color: #1d242d;
+  font-size: 20px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: regular;
+  margin: 0;
 }
