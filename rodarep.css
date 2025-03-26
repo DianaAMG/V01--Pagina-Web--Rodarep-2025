@@ -1,0 +1,47 @@
+body {
+  margin: 0;
+}
+
+#headed{
+    background-color: #0a4cc5;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+#main-nav {
+  width: 80%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  justify-content: space-between;
+  height: 101px;
+}
+
+.logo {
+  color: #ffffff;
+  font-size: 36px;
+  font-family: "Bebas Neue", sans-serif;
+}
+
+#navigation-block {
+  margin: 0px;
+  display:flex;
+  gap:12px;
+}
+
+.navigation {
+  list-style-type: none;
+  display: inline-block;
+  text-align: center;
+  font-family: "Montserrat", sans-serif;
+  font-size: 15px;
+  font-weight: bold;
+}
+
+a {
+  color: #ffffff;
+  cursor: pointer;
+  text-decoration: none;
+  justify-content: space-between;
+}
