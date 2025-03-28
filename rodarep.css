@@ -2,14 +2,14 @@ body {
   margin: 0;
 }
 
-.headed {
+.header {
   background-color: #0a4cc5;
   width: 100%;
   display: flex;
   justify-content: center;
 }
 
-.headed__nav {
+.header__nav {
   width: 80%;
   display: flex;
   align-items: center;
@@ -54,7 +54,7 @@ body {
   justify-content: center;
 }
 
-.space_inicio {
+.inicio {
   background-image: url(./img/rodamientos\ fondo\ web.jpg);
   background-size: cover;
   background-position: center;
@@ -81,7 +81,7 @@ body {
   color: #1d242d;
   font-size: 60px;
   font-family: "Bebas Neue", sans-serif;
-  font-weight: regular;
+  font-weight: bold;
   margin: 0;
 }
 
@@ -89,6 +89,65 @@ body {
   color: #1d242d;
   font-size: 20px;
   font-family: "Montserrat", sans-serif;
-  font-weight: regular;
+  font-weight: normal;
   margin: 0;
+}
+
+.portafolio {
+  background-color: #0a4cc5;
+  width: 100%;
+  height: 400px;
+  justify-content: center;
+  display: flex;
+  align-items: center;
+}
+
+.container {
+  width: 80%;
+  height: 350px;
+  justify-content: center;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.portafolio__productos {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.portafolio__titulo {
+  margin: 0px 0px 8px 0px;
+  font-family: "Bebas Neue", sans-serif;
+  font-weight: normal;
+  font-size: 25px;
+  color: #ffffff;
+  letter-spacing: 2px;
+}
+
+.productos {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  box-shadow: 3px 3px 8px #1d242d;
+  box-shadow: insert 3px 3px 8px #1d242d;
+  backdrop-filter: blur(10px);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.rodamientos {
+  background-image: url(./img/portafolio__rodamentos.webp);
+}
+
+.chumaceras {
+  background-image: url(./img/portafolio__chumaceras.png);
+}
+
+.poleas {
+  background-image: url(./img/portafolio_polea.png);
 }
