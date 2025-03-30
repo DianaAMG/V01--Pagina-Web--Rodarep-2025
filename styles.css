@@ -1,0 +1,343 @@
+body {
+  margin: 0;
+}
+
+.header {
+  background-color: #0a4cc5;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.header__nav {
+  width: 80%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 101px;
+}
+
+.nav__logo {
+  color: #ffffff;
+  font-size: 36px;
+  font-family: "Bebas Neue", sans-serif;
+}
+
+.nav__list {
+  margin: 0px;
+  padding: 0px;
+  display: flex;
+  gap: 12px;
+}
+
+.nav__card {
+  list-style-type: none;
+  display: inline-block;
+  text-align: center;
+  font-family: "Montserrat", sans-serif;
+  font-size: 15px;
+  font-weight: bold;
+}
+
+.nav__link {
+  color: #ffffff;
+  cursor: pointer;
+  text-decoration: none;
+  justify-content: space-between;
+}
+
+.space {
+  background-color: #ffffff;
+  width: 100%;
+  height: 25px;
+  display: flex;
+  justify-content: center;
+}
+
+.inicio {
+  background-image: url(./img/rodamientos\ fondo\ web.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 400px;
+  justify-content: center;
+  display: flex;
+  align-items: center;
+}
+
+.inicio__contenedor {
+  background-color: #ed7b26;
+  width: 75%;
+  height: 175px;
+  opacity: 90%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.inicio__titulo {
+  color: #1d242d;
+  font-size: 60px;
+  font-family: "Bebas Neue", sans-serif;
+  font-weight: bold;
+  margin: 0;
+}
+
+.subtitulo__eslogan {
+  color: #1d242d;
+  font-size: 20px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: normal;
+  margin: 0;
+}
+
+.portafolio {
+  background-color: #0a4cc5;
+  width: 100%;
+  height: 400px;
+  justify-content: center;
+  display: flex;
+  align-items: center;
+}
+
+.container {
+  width: 80%;
+  height: 350px;
+  justify-content: center;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.portafolio__productos {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.portafolio__titulo {
+  margin: 0px 0px 8px 0px;
+  font-family: "Bebas Neue", sans-serif;
+  font-weight: normal;
+  font-size: 25px;
+  color: #ffffff;
+  letter-spacing: 2px;
+}
+
+.productos {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  box-shadow: 3px 3px 8px #1d242d;
+  box-shadow: insert 3px 3px 8px #1d242d;
+  backdrop-filter: blur(10px);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.rodamientos {
+  background-image: url(./img/portafolio__rodamentos.webp);
+}
+
+.chumaceras {
+  background-image: url(./img/portafolio__chumaceras.png);
+}
+
+.poleas {
+  background-image: url(./img/portafolio_polea.png);
+}
+
+.retenedores {
+  background-image: url(./img/portafolio_retenedores.png);
+}
+
+.hacer {
+  width: 100%;
+  height: 450px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-end;
+}
+
+.hacer__contenedor {
+  background-image: url(./img/rodamientos\ fondo\ web.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 400px;
+  position: absolute;
+}
+
+.hacer_contenido {
+  background-color: #ed7b26;
+  width: 600px;
+  height: 550px;
+  z-index: 10;
+  opacity: 90%;
+  margin-right: 130px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.contenido_block {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 25px;
+  padding: 30px;
+}
+
+.contenido__titulo {
+  margin: 0px;
+  font-family: "Bebas Neue", sans-serif;
+  font-weight: normal;
+  font-size: 45px;
+  color: #1d242d;
+  letter-spacing: 1px;
+}
+
+.contenido__texto {
+  color: #1d242d;
+  font-size: 20px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: normal;
+  margin: 0;
+  letter-spacing: 0px;
+}
+
+.button__contenido {
+  width: 200px;
+  height: 50px;
+  background-color: #ffffff;
+  border-radius: 56px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: normal;
+  color: #ed7b26;
+  font-size: 15px;
+  border: none;
+}
+
+.elegirnos {
+  background-color: #0a4cc5;
+  width: 100%;
+  height: 450px;
+  justify-content: center;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin: 0px;
+  padding: 0px;
+  gap: 10px;
+}
+
+.elegirnos__texto {
+  justify-content: center;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin: 0px;
+  padding: 0px;
+  gap: 0px;
+}
+
+.elegirnos__titulo {
+  margin: 0px;
+  padding: 0px;
+  height: 135px;
+  font-family: "Bebas Neue", sans-serif;
+  font-weight: normal;
+  font-size: 150px;
+  color: transparent;
+  -webkit-text-stroke: 2px #ffffff;
+  letter-spacing: 8px;
+}
+
+.elegirnos__subtitulo {
+  margin: 0px;
+  font-family: "Bebas Neue", sans-serif;
+  font-weight: normal;
+  font-size: 55px;
+  color: #ffffff;
+  letter-spacing: 1px;
+}
+
+.elegirnos__texto {
+  margin: 0px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: normal;
+  font-size: 15px;
+  color: #ffffff;
+}
+
+.elementos {
+  width: 80%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.elementos__elegirnos {
+  justify-content: center;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 10PX;
+}
+
+.elemento__experiencia {
+  width: 50px;
+  height: 50px;
+  background-image: url(./img/cleaned_icon_1.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.elemento__variedad {
+  width: 50px;
+  height: 50px;
+  background-image: url(./img/cleaned_icon_2.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.elemento__precios {
+  width: 50px;
+  height: 50px;
+  background-image: url(./img/cleaned_icon_3.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.elemento__envios {
+  width: 50px;
+  height: 50px;
+  background-image: url(./img/cleaned_icon_4.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.elementos_texto {
+  width: 90%;
+  margin: 0px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: normal;
+  font-size: 15px;
+  color: #ffffff;
+  text-align: center;
+}
