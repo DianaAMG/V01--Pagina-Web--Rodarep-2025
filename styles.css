@@ -1,3 +1,8 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
 body {
   margin: 0;
 }
@@ -24,7 +29,6 @@ body {
 }
 
 .nav__list {
-  margin: 0px;
   padding: 0px;
   display: flex;
   gap: 12px;
@@ -198,7 +202,6 @@ body {
 }
 
 .contenido__titulo {
-  margin: 0px;
   font-family: "Bebas Neue", sans-serif;
   font-weight: normal;
   font-size: 45px;
@@ -235,7 +238,6 @@ body {
   display: flex;
   align-items: center;
   flex-direction: column;
-  margin: 0px;
   padding: 0px;
   gap: 10px;
 }
@@ -245,13 +247,11 @@ body {
   display: flex;
   align-items: center;
   flex-direction: column;
-  margin: 0px;
   padding: 0px;
   gap: 0px;
 }
 
 .elegirnos__titulo {
-  margin: 0px;
   padding: 0px;
   height: 135px;
   font-family: "Bebas Neue", sans-serif;
@@ -263,7 +263,6 @@ body {
 }
 
 .elegirnos__subtitulo {
-  margin: 0px;
   font-family: "Bebas Neue", sans-serif;
   font-weight: normal;
   font-size: 55px;
@@ -272,7 +271,6 @@ body {
 }
 
 .elegirnos__texto {
-  margin: 0px;
   font-family: "Montserrat", sans-serif;
   font-weight: normal;
   font-size: 15px;
@@ -283,7 +281,6 @@ body {
   width: 80%;
   height: 100%;
   display: flex;
-  justify-content: center;
   align-items: center;
   justify-content: space-between;
 }
@@ -299,7 +296,7 @@ body {
 .elemento__experiencia {
   width: 50px;
   height: 50px;
-  background-image: url(./img/cleaned_icon_1.png);
+  background-image: url(./img/icon_01.png);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -308,7 +305,7 @@ body {
 .elemento__variedad {
   width: 50px;
   height: 50px;
-  background-image: url(./img/cleaned_icon_2.png);
+  background-image: url(./img/icon_02.png);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -317,7 +314,7 @@ body {
 .elemento__precios {
   width: 50px;
   height: 50px;
-  background-image: url(./img/cleaned_icon_3.png);
+  background-image: url(./img/icon_03.png);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -326,7 +323,7 @@ body {
 .elemento__envios {
   width: 50px;
   height: 50px;
-  background-image: url(./img/cleaned_icon_4.png);
+  background-image: url(./img/icon_04.png);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -334,7 +331,6 @@ body {
 
 .elementos_texto {
   width: 90%;
-  margin: 0px;
   font-family: "Montserrat", sans-serif;
   font-weight: normal;
   font-size: 15px;
@@ -346,9 +342,8 @@ body {
   width: 100%;
   height: 450px;
   display: flex;
-  flex-direction: column;
   justify-content: center;
-  align-items: flex-start;
+  align-items: center;
 }
 
 .medidor__contenedor {
@@ -364,24 +359,25 @@ body {
   justify-content: space-between;
 }
 
+.medidor__contenido {
+  width: 80%;
+  display: flex;
+  align-items: center;
+  gap: 260px;
+}
+
 .medidor__block {
   background-color: #ed7b26;
-  width: 540px;
-  height: 550px;
+  height: 450px;
   z-index: 10;
   opacity: 90%;
-  margin-left: 140px;
   display: flex;
-  align-items: flex-start;
   flex-direction: column;
   justify-content: center;
-  align-items: flex-start;
 }
 
 .block__texto {
   width: 440px;
-  height: 225px;
-  margin: 0px;
   padding: 50px;
   display: flex;
   align-items: center;
@@ -391,7 +387,6 @@ body {
 }
 
 .medidor__texto {
-  margin: 0px;
   gap: 25px;
   font-family: "Montserrat", sans-serif;
   font-weight: normal;
@@ -399,3 +394,238 @@ body {
   color: #1d242d;
   text-align: center;
 }
+
+.medidor__rodamientos {
+  background-color: #ed7b26;
+  width: 200px;
+  height: 212px;
+  z-index: 10;
+  opacity: 90%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px;
+  box-shadow: 3px 3px 8px #1d242d;
+  box-shadow: insert 3px 3px 8px #1d242d;
+}
+
+.rodamientos__texto {
+  color: #1d242d;
+  padding: 20px;
+  font-family: "Bebas Neue", sans-serif;
+  font-weight: bold;
+  font-size: 26px;
+  text-align: center;
+}
+
+.contactanos {
+  background-color: #0a4cc5;
+  width: 100%;
+  height: 450px;
+  justify-content: center;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding: 0px;
+}
+
+.contactanos__head {
+  width: 80%;
+  height: 80px;
+  padding: 0px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.contactanos__line {
+  width: 380px;
+  height: 63px;
+  background-image: url(./img/line__contactanos.png);
+}
+
+.contactanos__titulo {
+  padding: 0px;
+  font-family: "Bebas Neue", sans-serif;
+  font-weight: normal;
+  font-size: 80px;
+  color: transparent;
+  -webkit-text-stroke: 2px #ffffff;
+  letter-spacing: 8px;
+}
+
+.contactanos__main {
+  width: 80%;
+  height: 80%;
+  display: flex;
+  align-items: center;
+}
+
+.contactanos__formulario {
+  color: #ffffff;
+  width: 50%;
+  height: 100%;
+  justify-content: center;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding: 0;
+}
+
+.contactanos__comunicacion {
+  color: #ffffff;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.comunicacion__llamada {
+  display: flex;
+  align-items: center;
+  padding: 0;
+}
+
+.llamada__icono {
+  width: 50px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  background-image: url(./img/contactanos__icono01.png);
+}
+
+.comunicacion__correo {
+  display: flex;
+  align-items: center;
+  padding: 0;
+}
+
+.correo__icono {
+  width: 50px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  background-image: url(./img/contactanos__icono02.png);
+}
+
+.comunicacion__texto {
+  gap: 25px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: bold;
+  font-size: 12px;
+  color: #ffffff;
+  text-align: center;
+}
+
+.formulario__cliente {
+  background-color: #0a4cc5;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding: 0;
+  gap: 25px;
+}
+
+.formulario {
+  width: 100%;
+  height: 40px;
+  background-color: #ffffff;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+}
+
+.mensaje {
+  height: 77px;
+  align-items: flex-start;
+}
+
+.formulario__texto {
+  font-family: "Montserrat", sans-serif;
+  font-weight: normal;
+  color: #1d242d;
+  font-weight: bold;
+  font-size: 12px;
+  text-align: center;
+  margin-left: 10px;
+}
+.mensajes {
+  margin-top: 10px;
+}
+
+.button__enviar {
+  width: 200px;
+  height: 50px;
+  background-color: #ffffff;
+  border-radius: 56px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: normal;
+  color: #0a4cc5;
+  font-size: 15px;
+  border: none;
+}
+
+.contactanos__ubicacion {
+  width: 50%;
+  height: 100%;
+  flex-direction: column;
+}
+
+
+.ubicacion__head {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+
+.ubicacion {
+  color: #ffffff;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+
+.ubicacion__icono {
+  width: 50px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  background-image: url(./img/contactanos__icono03.png);
+}
+
+.ubicacion__texto {
+  font-family: "Montserrat", sans-serif;
+  font-weight: bold;
+  font-size: 12px;
+  color: #ffffff;
+  text-align: center;
+}
+
+.ubicacion__maps {
+  height: 71%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap:10px
+}
+
+.maps__url{
+  height: 92%;
+}
+
+.iframe{
+  width: 100%;
+  height: 90%;
+  border-radius: 10px;
+  border: none;
+
+}
+
+
+
