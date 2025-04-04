@@ -1,26 +1,16 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
-    <meta charset="utf-8" />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1, maximum-scale=1"
-    />
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
     <title>Rodamientos y Repuestos del caribe</title>
-    <link href="
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" media=" (max-width: 1440px)" href="./styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com"/>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com"/>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet"/>
+    <link rel="stylesheet" media=" (max-width: 1440px)" href="./styles.css"/>
   </head>
 
   <body>
@@ -53,70 +43,70 @@
     <div class="space"></div>
 
     <main class="meter">
-     
       <div class="meter-calculator__container-head">
         <div class="meter-calculator__block">
           <h3 class="meter-calculator__title">MEDIDOR RÁPIDO DE RODAMIENTOS</h3>
           <p class="meter-calculator__subtitle">
-            Calculamos según la numeración estándar de rodamientos del sistema ISO
+            Calculamos según la numeración estándar de rodamientos del sistema
+            ISO
           </p>
         </div>
       </div>
 
       <div class="space"></div>
 
-      <div class="container__calculadora">
-        <div class="calculadora__container">
-          <div class="calduladora__head">
-            <h3 class="titulo_tiporodamiento">TIPO DE RODAMIENTO</h3>
-            <select class="seleccion__rodamiento" name="tipo__rodamiento">
-              <option class="seleccion__texto" value="seleccion" selected>
+      <div class="meter__calculator">
+        <div class="meter__calculator-container">
+          <div class="meter__calculator-head">
+            <h3 class="meter_calculator-title">TIPO DE RODAMIENTO</h3>
+            <select class="meter__calculator-selection" name="bearing__type">
+              <option class="selection__text" value="selección" selected>
                 Selecciona una opción
               </option>
               <option
-                class="seleccion__texto"
+                class="selection__text"
                 value="Rodamiento de rodillos de una hilera"
               >
                 Rodamiento de rodillos de una hilera
               </option>
               <option
-                class="seleccion__texto"
+                class="selection__texto"
                 value="Rodamiento de rodillos de dos hileras"
               >
                 Rodamiento de rodillos de dos hileras
               </option>
               <option
-                class="seleccion__texto"
+                class="selection__text"
                 value="Rodamiento de rodillos a rótula"
               >
                 Rodamiento de rodillos a rótula
               </option>
               <option
-                class="seleccion__texto"
+                class="selection__text"
                 value="Rodamiento de rodillos cilíndricos"
               >
                 Rodamiento de rodillos cilíndricos
               </option>
               <option
-                class="seleccion__texto"
+                class="selection__text"
                 value=" Rodamiento de rodillos cónicos"
               >
                 Rodamiento de rodillos cónicoss
               </option>
               <option
-                class="seleccion__texto"
+                class="selection__text"
                 value="Rodamiento de bolas de ranura profunda"
               >
                 Rodamiento de bolas de ranura profunda
               </option>
               <option
-                class="seleccion__texto"
+                class="selection__text"
                 value="Rodamiento de bolas de contacto angular"
               >
                 Rodamiento de bolas de contacto angulars
               </option>
               <option
-                class="seleccion__texto"
+                class="selection__text"
                 value="Rodamiento de rodillos cilíndricos "
               >
                 Rodamiento de rodillos cilíndricos
@@ -124,47 +114,49 @@
             </select>
           </div>
 
-          <div class="container__calculadora">
-            <div class="calculadora__ingresaMedidas">
-              <h3 class="subtitulos__calculadora">Ingresa las medidas</h3>
+          <div class="meter__calculator">
+            <div class="meter__measures">
+              <h3 class="meter__measures-subtitle">Ingresa las medidas</h3>
 
-              <div class="ingresaMedidas">
-                <p class="ingresaMedidas__texto1">Diámetro interno (d) → mm</p>
-                <p class="ingresaMedidas__texto2">
+              <div class="meter__insert-measure">
+                <p class="meter__measure-text">Diámetro interno (d) → mm</p>
+                <p class="meter__measure-description">
                   Tamaño del eje donde encaja
                 </p>
-                <div class="container__numerico"></div>
+                <div class="meter__measure-container"></div>
 
-                <p class="ingresaMedidas__texto1">Diámetro externo (D) → mm</p>
-                <p class="ingresaMedidas__texto2">
+                <p class="meter__measure-text">Diámetro externo (D) → mm</p>
+                <p class="meter__measure-description">
                   Tamaño total del rodamiento
                 </p>
-                <div class="container__numerico"></div>
+                <div class="meter__measure-container"></div>
 
-                <p class="ingresaMedidas__texto1">Ancho (B) →mm</p>
-                <p class="ingresaMedidas__texto2">Grosor del rodamiento</p>
-                <div class="container__numerico"></div>
+                <p class="meter__measure-text">Ancho (B) → mm</p>
+                <p class="meter__measure-description">Grosor del rodamiento</p>
+                <div class="meter__measure-container"></div>
               </div>
 
-              <input type="button" class="button__calcular" value="Calcular" />
+              <input type="button" class="button__meter-measure" value="Calcular"/>
             </div>
 
-            <div class="calculadora__resultado">
-              <h3 class="subtitulos__calculadora">
+            <div class="meter__calculator-result-head">
+              <h3 class="meter__measures-subtitle">
                 El rodamiento que necesitas
               </h3>
 
-              <div class="resultado__calculadora">
-                <div class="container__resultado">
-                  <p class="resultado__text1">6032</p>
+              <div class="meter__calculator-result">
+                <div class="meter__container-result">
+                  <p class="meter__container-result-text">6032</p>
                 </div>
 
-                <div class="container__infoResultado">
-                  <p class="resultado-_text2">Informacion del rodamiento</p>
+                <div class="meter__calculator-information">
+                  <p class="meter__calculator-information-text">
+                    Informacion del rodamiento
+                  </p>
                 </div>
               </div>
 
-              <input type="button" class="button__cotizar" value="Cotizar" />
+              <input type="button" class="button__quote" value="Cotizar"/>
             </div>
           </div>
         </div>
