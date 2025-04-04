@@ -8,46 +8,46 @@ body {
 }
 
 .header {
-  background-color: #0a4cc5;
   width: 100%;
   display: flex;
   justify-content: center;
+  background-color: #0a4cc5;
 }
 
 .header__nav {
   width: 80%;
+  height: 101px;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  height: 101px;
 }
 
-.nav__logo {
+.header__nav-logo {
   color: #ffffff;
-  font-size: 36px;
   font-family: "Bebas Neue", sans-serif;
+  font-size: 36px;
 }
 
-.nav__list {
-  padding: 0px;
+.header__nav-list {
   display: flex;
+  padding: 0px;
   gap: 12px;
 }
 
-.nav__card {
-  list-style-type: none;
+.header__nav-list-card {
   display: inline-block;
-  text-align: center;
   font-family: "Montserrat", sans-serif;
   font-size: 15px;
   font-weight: bold;
+  text-align: center;
+  list-style-type: none;
 }
 
-.nav__link {
+.header__nav-link {
+  justify-content: space-between;
   color: #ffffff;
   cursor: pointer;
   text-decoration: none;
-  justify-content: space-between;
 }
 
 .space {
@@ -58,20 +58,19 @@ body {
   justify-content: center;
 }
 
-.inicio {
-  background-image: url(./img/rodamientos\ fondo\ web.jpg);
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
+.start {
   width: 100%;
   height: 400px;
   justify-content: center;
   display: flex;
   align-items: center;
+  background-image: url(./img/rodamientos\ fondo\ web.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
-.inicio__contenedor {
-  background-color: #ed7b26;
+.start__container {
   width: 75%;
   height: 175px;
   opacity: 90%;
@@ -79,9 +78,10 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  background-color: #ed7b26;
 }
 
-.inicio__titulo {
+.start__title {
   color: #1d242d;
   font-size: 60px;
   font-family: "Bebas Neue", sans-serif;
@@ -89,41 +89,42 @@ body {
   margin: 0;
 }
 
-.subtitulo__eslogan {
-  color: #1d242d;
-  font-size: 20px;
-  font-family: "Montserrat", sans-serif;
-  font-weight: normal;
+.start__subtitle {
   margin: 0;
+  font-family: "Montserrat", sans-serif;
+  font-size: 20px;
+  font-weight: normal;
+  color: #1d242d;
 }
 
-.portafolio {
-  background-color: #0a4cc5;
+.portfolio {
   width: 100%;
   height: 400px;
   justify-content: center;
   display: flex;
   align-items: center;
+  background-color: #0a4cc5;
 }
 
 .container {
   width: 80%;
   height: 350px;
-  justify-content: center;
   display: flex;
   align-items: center;
+  justify-content: center;
   justify-content: space-between;
 }
 
-.portafolio__productos {
+.portfolio__products {
   width: 100%;
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
+  justify-content: center;
+  
 }
 
-.portafolio__titulo {
+.portfolio__title {
   margin: 0px 0px 8px 0px;
   font-family: "Bebas Neue", sans-serif;
   font-weight: normal;
@@ -132,7 +133,7 @@ body {
   letter-spacing: 2px;
 }
 
-.productos {
+.products {
   width: 200px;
   height: 200px;
   border-radius: 50%;
@@ -160,7 +161,7 @@ body {
   background-image: url(./img/portafolio_retenedores.png);
 }
 
-.hacer {
+.make{
   width: 100%;
   height: 450px;
   display: flex;
@@ -169,30 +170,31 @@ body {
   align-items: flex-end;
 }
 
-.hacer__contenedor {
+.make_container {
+  width: 100%;
+  height: 400px;
   background-image: url(./img/rodamientos\ fondo\ web.jpg);
+  position: absolute;
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  width: 100%;
-  height: 400px;
-  position: absolute;
+  
 }
 
-.hacer_contenido {
-  background-color: #ed7b26;
+.make_content {
   width: 600px;
   height: 550px;
-  z-index: 10;
-  opacity: 90%;
   margin-right: 130px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  background-color: #ed7b26;
+  z-index: 10;
+  opacity: 90%;
 }
 
-.contenido_block {
+.content_block {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -201,7 +203,7 @@ body {
   padding: 50px;
 }
 
-.contenido__titulo {
+.content__title {
   font-family: "Bebas Neue", sans-serif;
   font-weight: normal;
   font-size: 45px;
@@ -209,60 +211,62 @@ body {
   letter-spacing: 1px;
 }
 
-.contenido__texto {
-  color: #1d242d;
-  font-size: 20px;
+.content__text {
+  margin: 0;
   font-family: "Montserrat", sans-serif;
   font-weight: normal;
-  margin: 0;
+  font-size: 20px;
+  color: #1d242d;
   letter-spacing: 0px;
 }
 
-.button__contenido {
+.button__content {
   width: 200px;
   height: 45px;
-  background-color: #ffffff;
+  border: none;
   border-radius: 56px;
   font-family: "Montserrat", sans-serif;
   font-weight: normal;
-  color: #1d242d;
   font-size: 15px;
-  border: none;
+  color: #1d242d;
+  background-color: #ffffff;
 }
 
-.elegirnos {
-  background-color: #0a4cc5;
+.choose-us {
   width: 100%;
   height: 450px;
-  justify-content: center;
   display: flex;
+  justify-content: center;
   align-items: center;
   flex-direction: column;
   padding: 0px;
   gap: 10px;
+  background-color: #0a4cc5; 
 }
 
-.elegirnos__texto {
-  justify-content: center;
+.choose-us__text {
   display: flex;
+  justify-content: center;
   align-items: center;
   flex-direction: column;
   padding: 0px;
   gap: 0px;
 }
 
-.elegirnos__titulo {
+.choose-us__title {
   padding: 0px;
   height: 135px;
+  margin-right: -25px;
   font-family: "Bebas Neue", sans-serif;
   font-weight: normal;
   font-size: 150px;
   color: transparent;
   -webkit-text-stroke: 2px #ffffff;
   letter-spacing: 8px;
+  
 }
 
-.elegirnos__subtitulo {
+.choose-us__subtitle {
   font-family: "Bebas Neue", sans-serif;
   font-weight: normal;
   font-size: 55px;
@@ -270,14 +274,16 @@ body {
   letter-spacing: 1px;
 }
 
-.elegirnos__texto {
+.choose-us__description {
   font-family: "Montserrat", sans-serif;
   font-weight: normal;
+  align-items: center;
   font-size: 15px;
   color: #ffffff;
 }
 
-.elementos {
+
+.choose-us__items{
   width: 80%;
   height: 100%;
   display: flex;
@@ -285,15 +291,15 @@ body {
   justify-content: space-between;
 }
 
-.elementos__elegirnos {
-  justify-content: center;
+.choose-u__option {
   display: flex;
   align-items: center;
+  justify-content: center;
   flex-direction: column;
   gap: 10px;
 }
 
-.elemento__experiencia {
+.choose-us__icon--experiencee{
   width: 50px;
   height: 50px;
   background-image: url(./img/icon_01.png);
@@ -302,7 +308,7 @@ body {
   background-repeat: no-repeat;
 }
 
-.elemento__variedad {
+.choose-us__icon--variety {
   width: 50px;
   height: 50px;
   background-image: url(./img/icon_02.png);
@@ -311,7 +317,7 @@ body {
   background-repeat: no-repeat;
 }
 
-.elemento__precios {
+.choose-us__icon--price {
   width: 50px;
   height: 50px;
   background-image: url(./img/icon_03.png);
@@ -320,7 +326,7 @@ body {
   background-repeat: no-repeat;
 }
 
-.elemento__envios {
+.choose-us__icon--shipping {
   width: 50px;
   height: 50px;
   background-image: url(./img/icon_04.png);
@@ -329,16 +335,16 @@ body {
   background-repeat: no-repeat;
 }
 
-.elementos_texto {
+.choose-us__icon--text{
   width: 90%;
   font-family: "Montserrat", sans-serif;
   font-weight: normal;
   font-size: 15px;
-  color: #ffffff;
   text-align: center;
+  color: #ffffff;
 }
 
-.medidor {
+.measure{
   width: 100%;
   height: 450px;
   display: flex;
@@ -346,37 +352,37 @@ body {
   align-items: center;
 }
 
-.medidor__contenedor {
+.measure__container {
+  width: 100%;
+  height: 400px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
   background-image: url(./img/rodamientos\ fondo\ web.jpg);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  width: 100%;
-  height: 400px;
   position: absolute;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
 }
 
-.medidor__contenido {
+.measure__content {
   width: 80%;
   display: flex;
   align-items: center;
   gap: 260px;
 }
 
-.medidor__block {
-  background-color: #ed7b26;
+.measure__block {
   height: 450px;
-  z-index: 10;
-  opacity: 90%;
   display: flex;
   flex-direction: column;
   justify-content: center;
+  background-color: #ed7b26;
+  z-index: 10;
+  opacity: 90%;
 }
 
-.block__texto {
+.measure__text {
   width: 440px;
   padding: 50px;
   display: flex;
@@ -386,40 +392,39 @@ body {
   gap: 40px;
 }
 
-.medidor__texto {
-  gap: 25px;
+.measure__info {
+  gap: 10px;
   font-family: "Montserrat", sans-serif;
   font-weight: normal;
   font-size: 24px;
-  color: #1d242d;
   text-align: center;
+  color: #1d242d;
 }
 
-.medidor__rodamientos {
-  background-color: #ed7b26;
+.measure__block--bearings {
   width: 200px;
   height: 212px;
-  z-index: 10;
-  opacity: 90%;
   display: flex;
   justify-content: center;
   align-items: center;
+  background-color: #ed7b26;
+  z-index: 10;
+  opacity: 90%;
   border-radius: 5px;
   box-shadow: 3px 3px 8px #1d242d;
   box-shadow: insert 3px 3px 8px #1d242d;
 }
 
-.rodamientos__texto {
-  color: #1d242d;
+.measure__bearings--text {
   padding: 20px;
   font-family: "Bebas Neue", sans-serif;
   font-weight: bold;
   font-size: 26px;
   text-align: center;
+  color: #1d242d;
 }
 
-.contactanos {
-  background-color: #0a4cc5;
+.contact-us {
   width: 100%;
   height: 450px;
   justify-content: center;
@@ -427,9 +432,10 @@ body {
   align-items: center;
   flex-direction: column;
   padding: 10px 0;
+  background-color: #0a4cc5;
 }
 
-.contactanos__head {
+.contact-us__head {
   width: 80%;
   height: 80px;
   padding: 0px;
@@ -438,13 +444,14 @@ body {
   gap: 10px;
 }
 
-.contactanos__line {
+.contact-us__line {
   width: 100%;
   height: 2px;
   background-color: white;
 }
 
-.contactanos__titulo {
+.contact-us__title {
+  margin-right: -8px;
   padding: 0px;
   font-family: "Bebas Neue", sans-serif;
   font-weight: normal;
@@ -452,10 +459,9 @@ body {
   color: transparent;
   -webkit-text-stroke: 2px #ffffff;
   letter-spacing: 8px;
-  margin-right: -8px;
 }
 
-.contactanos__main {
+.contact-us__main {
   width: 80%;
   height: 80%;
   display: flex;
@@ -463,34 +469,27 @@ body {
   gap: 40px;
 }
 
-.contactanos__formulario {
-  color: #ffffff;
-  width: 50%;
+.contact-us__form {
+  width: 90%;
   height: 100%;
-  justify-content: center;
   display: flex;
   align-items: center;
+  justify-content: center;
   flex-direction: column;
   padding: 0;
-  gap: 25px;
+  gap: 20px;
+  color: #ffffff; 
 }
 
-.contactanos__comunicacion {
-  color: #ffffff;
+.contact-us__communication {
   width: 100%;
   display: flex;
   align-items: center;
   gap: 10px;
+  color: #ffffff;
 }
 
-.comunicacion__llamada {
-  display: flex;
-  align-items: center;
-  padding: 0;
-  gap: 10px;
-}
-
-.llamada__icono {
+.contact-us__icon--call {
   width: 27px;
   height: 27px;
   display: flex;
@@ -498,14 +497,8 @@ body {
   background-image: url(./img/contactanos__icono01.png);
 }
 
-.comunicacion__correo {
-  display: flex;
-  align-items: center;
-  padding: 0;
-  gap: 10px;
-}
 
-.correo__icono {
+.contact-us__icon--mail {
   width: 25px;
   height: 25px;
   display: flex;
@@ -513,54 +506,49 @@ body {
   background-image: url(./img/contactanos__icono02.png);
 }
 
-.comunicacion__texto {
+.contact-us__communication-text {
   gap: 25px;
   font-family: "Montserrat", sans-serif;
   font-weight: bold;
   font-size: 12px;
-  color: #ffffff;
   text-align: center;
+  color: #ffffff;
 }
 
-.formulario__cliente {
-  background-color: #0a4cc5;
-  width: 90%;
-  height: 100%;
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-  padding: 0;
-  gap: 25px;
-}
 
-.formulario {
+
+.contact-us__registration {
   width: 100%;
   height: 40px;
-  background-color: #ffffff;
-  border-radius: 5px;
   display: flex;
   align-items: center;
+  border-radius: 5px;
+  background-color: #ffffff;
+ 
 }
 
-.mensaje {
-  height: 77px;
-  align-items: flex-start;
-}
 
-.formulario__texto {
+.contact-us__registration--text {
+  margin-left: 10px;
   font-family: "Montserrat", sans-serif;
   font-weight: normal;
-  color: #1d242d;
   font-weight: bold;
   font-size: 12px;
   text-align: center;
-  margin-left: 10px;
-}
-.mensajes {
-  margin-top: 10px;
+  color: #1d242d; 
 }
 
-.button__enviar {
+.contact-us__message{
+  width: 100%;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  border-radius: 5px;
+  background-color: #ffffff;
+}
+
+
+.contact-us__button {
   width: 200px;
   height: 45px;
   background-color: #ffffff;
@@ -572,30 +560,31 @@ body {
   border: none;
 }
 
-.contactanos__ubicacion {
+.contact-us__location {
   width: 50%;
   height: 100%;
-  flex-direction: column;
+  display: flex;
 }
 
-.ubicacion__head {
-  width: 100%;
+.contact-us__maps {
+  height: 85%;
   display: flex;
   align-items: center;
-  justify-content: center;
-  gap: 20px;
+  flex-direction: column;
+  gap: 42px;
 }
 
-.ubicacion {
-  color: #ffffff;
+
+.contact-us__container-maps {
   width: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
   gap: 10px;
+  color: #ffffff;
 }
 
-.ubicacion__icono {
+.contact-us__container-maps--icon {
   width: 25px;
   height: 25px;
   display: flex;
@@ -603,7 +592,7 @@ body {
   background-image: url(./img/contactanos__icono03.png);
 }
 
-.ubicacion__texto {
+.contact-us__location-text {
   font-family: "Montserrat", sans-serif;
   font-weight: bold;
   font-size: 12px;
@@ -611,86 +600,83 @@ body {
   text-align: center;
 }
 
-.ubicacion__maps {
-  height: 85%;
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-  gap: 18px;
-}
 
-.maps__url {
+
+.contact-us__maps-url{
   height: 80%;
   align-items: center;
   display: flex;
   justify-content: center;
 }
 
-.iframe {
+.contact-us__maps-url--iframe {
   width: 100%;
-  height: 90%;
+  height: 115%;
   border-radius: 10px;
   border: none;
 }
 
-.copyright{
-  background-color: #0a4cc5;
+.copyright {
   width: 100%;
   height: 60px;
   display: flex;
-  align-items:center ;
+  align-items: center;
   justify-content: center;
   margin-top: 10px;
+  background-color: #0a4cc5;
 }
 
-.copyright__tex{
+.copyright__text {
   font-family: "Montserrat", sans-serif;
   font-weight: normal;
   font-size: 15px;
-  color: #ffffff;
   text-align: center;
+  color: #ffffff;
+  
 }
 
-.medidor__container{
-  background-image: url(./img/rodamientos\ fondo\ web.jpg);
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
+.meter-calculator__container-head {
   width: 100%;
   height: 180px;
   justify-content: center;
   display: flex;
   align-items: center;
+  background-image: url(./img/rodamientos\ fondo\ web.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+ 
 }
 
-.container__medidor{
-  background-color: #ed7b26;
+.meter-calculator__block {
   width: 75%;
   height: 100px;
-  opacity: 90%;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  background-color: #ed7b26;
+  opacity: 90%;
+  
 }
 
-.medidor__titulo{
-  color: #1d242d;
-  font-size: 40px;
+.meter-calculator__title {
+  margin: 0;
   font-family: "Bebas Neue", sans-serif;
   font-weight: bold;
-  margin: 0;
+  font-size: 40px;
+  color: #1d242d; 
 }
 
-.medidor__subtitulo {
-  color: #1d242d;
-  font-size: 15px;
+.meter-calculator__subtitle {
+  margin: 0;
   font-family: "Montserrat", sans-serif;
   font-weight: normal;
-  margin: 0;
+  font-size: 15px;
+  color: #1d242d;
 }
 
-.container__calculadora{
+.container__calculadora {
   width: 100%;
   height: 100%;
   display: flex;
@@ -699,7 +685,7 @@ body {
   gap: 80px;
 }
 
-.calculadora__container{
+.calculadora__container {
   width: 80%;
   height: 530px;
   background-color: #ed7b26;
@@ -713,16 +699,16 @@ body {
   box-shadow: 0px 4px 4px 0 #00000040, inset 0px 4px 4px 0 #00000040;
 }
 
-.calduladora__head{
+.calduladora__head {
   height: 80px;
   display: flex;
   align-items: center;
-  justify-content:center;
+  justify-content: center;
   flex-direction: column;
   padding: 10px;
 }
 
-.titulo_tiporodamiento{
+.titulo_tiporodamiento {
   color: #1d242d;
   font-size: 30px;
   font-family: "Bebas Neue", sans-serif;
@@ -730,7 +716,7 @@ body {
   margin: 0;
 }
 
-.seleccion__rodamiento{
+.seleccion__rodamiento {
   width: 60%;
   height: 50px;
   border-radius: 5px;
@@ -743,17 +729,17 @@ body {
   margin: 0;
 }
 
-.calculadora__ingresaMedidas{
+.calculadora__ingresaMedidas {
   width: 30%;
   height: 100%;
   display: flex;
-  justify-content:center;
+  justify-content: center;
   align-items: center;
   flex-direction: column;
   gap: 10px;
 }
 
-.subtitulos__calculadora{
+.subtitulos__calculadora {
   color: #1d242d;
   font-size: 35px;
   font-family: "Bebas Neue", sans-serif;
@@ -766,7 +752,7 @@ body {
   align-items: center;
 }
 
-.ingresaMedidas{
+.ingresaMedidas {
   display: flex;
   align-items: center;
   justify-content: space-evenly;
@@ -774,7 +760,7 @@ body {
   gap: 2px;
 }
 
-.ingresaMedidas__texto1{
+.ingresaMedidas__texto1 {
   font-family: "Montserrat", sans-serif;
   font-size: 12px;
   color: #1d242d;
@@ -783,7 +769,7 @@ body {
   text-align: center;
 }
 
-.ingresaMedidas__texto2{
+.ingresaMedidas__texto2 {
   font-family: "Montserrat", sans-serif;
   font-size: 10px;
   color: #1d242d;
@@ -792,7 +778,7 @@ body {
   text-align: center;
 }
 
-.container__numerico{
+.container__numerico {
   width: 50px;
   height: 50px;
   border-radius: 10px;
@@ -800,7 +786,7 @@ body {
   margin: 5px;
 }
 
-.button__calcular{
+.button__calcular {
   width: 200px;
   height: 45px;
   background-color: #ffffff;
@@ -813,24 +799,24 @@ body {
   text-align: center;
 }
 
-.calculadora__resultado{
+.calculadora__resultado {
   width: 30%;
   height: 100%;
   display: flex;
-  justify-content:center;
+  justify-content: center;
   align-items: center;
   flex-direction: column;
   gap: 10px;
 }
 
-.resultado__calculadora{
+.resultado__calculadora {
   display: flex;
-  justify-content:center;
+  justify-content: center;
   align-items: center;
   flex-direction: column;
 }
 
-.container__resultado{
+.container__resultado {
   width: 150px;
   height: 95px;
   border-radius: 10px;
@@ -841,7 +827,7 @@ body {
   align-items: center;
 }
 
-.resultado__text1{
+.resultado__text1 {
   color: #1d242d;
   font-size: 40px;
   font-family: "Bebas Neue", sans-serif;
@@ -850,7 +836,7 @@ body {
   text-align: center;
 }
 
-.container__infoResultado{
+.container__infoResultado {
   width: 150px;
   height: 130px;
   border-radius: 10px;
@@ -861,7 +847,7 @@ body {
   align-items: center;
 }
 
-.resultado-_text2{
+.resultado-_text2 {
   font-family: "Montserrat", sans-serif;
   font-size: 15px;
   color: #1d242d;
@@ -870,7 +856,7 @@ body {
   text-align: center;
 }
 
-.button__cotizar{
+.button__cotizar {
   width: 200px;
   height: 45px;
   background-color: #ffffff;
@@ -882,9 +868,3 @@ body {
   border: none;
   text-align: center;
 }
-
-
-
-
-
-
