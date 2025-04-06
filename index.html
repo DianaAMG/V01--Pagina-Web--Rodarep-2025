@@ -10,54 +10,44 @@
     <title>Rodamientos y Repuestos del caribe</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap"
-      rel="stylesheet"
-    />
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap"rel="stylesheet"/>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      rel="stylesheet"
-      media="screen and (max-width: 1440px)"
-      href="./styles.css"
-    />
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet"/>
+    <link rel="stylesheet" media="screen and (max-width: 1440px)" href="./styles.css"/>
   </head>
 
   <body>
     <header class="header">
-      <nav class="header__nav">
-        <div class="header__nav-logo">RODAREP</div>
+      <nav class="header__nav" id="navigation_menu">
+        <a href="#navigation_menu" class="header__nav-logo">RODAREP</a>
         <ol class="header__nav-list">
           <li class="header__nav-list-card">
-            <a href="#" class="header__nav-link">Inicio</a>
+            <a href="#star" class="header__nav-link">Inicio</a>
           </li>
           <li class="header__nav-list-card">
-            <a href="#" class="header__nav-link">Portafolio</a>
+            <a href="#portfolio" class="header__nav-link">Portafolio</a>
           </li>
           <li class="header__nav-list-card">
-            <a href="#" class="header__nav-link">Qué hacemos</a>
+            <a href="#make" class="header__nav-link">Qué hacemos</a>
           </li>
           <li class="header__nav-list-card">
-            <a href="#" class="header__nav-link">Por qué elegirnos</a>
+            <a href="#choose-us" class="header__nav-link">Por qué elegirnos</a>
           </li>
           <li class="header__nav-list-card">
-            <a href="#" class="header__nav-link">Medidor</a>
+            <a href="#measure" class="header__nav-link">Medidor</a>
           </li>
           <li class="header__nav-list-card">
-            <a href="#" class="header__nav-link">Contáctanos</a>
+            <a href="#contact-us" class="header__nav-link">Contáctanos</a>
           </li>
         </ol>
       </nav>
     </header>
 
-    <div class="space"></div>
 
     <main>
-      <section class="start">
+      <div class="space" id="star"></div>
+      <section class="start" >
         <div class="start__container">
           <h3 class="start__title">Rodamientos y Repuestos del Caribe</h3>
           <p class="start__subtitle">
@@ -68,7 +58,7 @@
 
       <div class="space"></div>
 
-      <section class="portfolio">
+      <section class="portfolio" id="portfolio">
         <div class="container">
           <div class="portfolio__products">
             <h2 class="portfolio__title">RODAMIENTOS</h2>
@@ -92,7 +82,7 @@
         </div>
       </section>
 
-      <section class="make">
+      <section class="make" id="make">
         <div class="make_content">
           <div class="make_content-block">
             <h2 class="make_content-title">¿QUÉ HACEMOS?</h2>
@@ -119,7 +109,7 @@
         <div class="make_container"></div>
       </section>
 
-      <section class="choose-us">
+      <section class="choose-us" id="choose-us">
         <div class="choose-us__text">
           <h3 class="choose-us__title">RODAREP</h3>
           <h3 class="choose-us__subtitle">¿POR QUÉ ELEGIRNOS?</h3>
@@ -159,7 +149,7 @@
         </div>
       </section>
 
-      <section class="measure">
+      <section class="measure" id="measure">
         <div class="measure__content">
           <div class="measure__block">
             <div class="measure__text">
@@ -174,7 +164,7 @@
             </div>
           </div>
 
-          <div class="measure__block--bearings">
+          <div class="measure__block--bearings" id="measure__block--bearings">
             <h3 class="measure__bearings--text">
               Medidor Rápido de Rodamientos
             </h3>
@@ -184,7 +174,7 @@
       </section>
     </main>
 
-    <footer class="contact-us">
+    <footer class="contact-us" id="contact-us">
       <div class="contact-us__head">
         <div class="contact-us__line"></div>
         <h3 class="contact-us__title">CONTÁCTANOS</h3>
@@ -248,5 +238,7 @@
         </p>
       </div>
     </footer>
+
+    <script src="./rodarep.js"></script>
   </body>
 </html>
