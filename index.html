@@ -182,7 +182,7 @@
       </div>
 
       <div class="contact-us__main">
-        <div class="contact-us__form">
+        <div class="contact-us__form-main">
           <div class="contact-us__communication">
             <div class="contact-us__icon contact-us__icon--call"></div>
             <p class="contact-us__communication-text">Llámanos: 3167437807</p>
@@ -192,20 +192,19 @@
             </p>
           </div>
 
-          <div class="contact-us__registration">
-            <p class="contact-us__registration--text">Nombre Completo</p>
-          </div>
 
-          <div class="contact-us__registration">
-            <p class="contact-us__registration--text">Correo Electronico</p>
-          </div>
+         <form id="form" class="contact-us__form">
+            <input type="text" name="name" id="name" class="contact-us__registration" id="name" placeholder="Nombre Completo"> 
+          
+            <input type="text" name="email"  id="email" class="contact-us__registration" id="email" placeholder="correo electronico">
+          
+            <textarea name="message" id="message" class="contact-us__message" id="message" cols="30" rows="5" placeholder="Mensaje"></textarea>
 
-          <div class="contact-us__message">
-            <p class="contact-us__registration--text">Mensaje</p>
-          </div>
+            <input type="submit" id="contact-us__button" class="contact-us__button" value="Enviar"> </input>
+         </form>  
 
-          <input type="button" class="contact-us__button" value="Enviar" />
         </div>
+        
 
         <div class="contact-us__location">
           <div class="contact-us__maps">

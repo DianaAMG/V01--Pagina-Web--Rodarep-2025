@@ -220,6 +220,10 @@ body {
   cursor: pointer;
 }
 
+.button__make-content:hover{
+  background-color: #FFD5B6;
+}
+
 .choose-us {
   width: 100%;
   height: 450px;
@@ -227,7 +231,7 @@ body {
   align-items: center;
   flex-direction: column;
   padding: 0px;
-  gap: 10px;
+  gap: 20px;
   background-color: #0a4cc5;
 }
 
@@ -437,27 +441,25 @@ body {
 
 .contact-us__main {
   width: 80%;
-  height: 80%;
+  height: 100%;
   display: flex;
-  gap: 40px;
+  justify-content: space-evenly;
 }
 
-.contact-us__form {
-  width: 90%;
+.contact-us__form-main {
+  width: 50%;
+  height: 100%;
   display: flex;
-  align-items: center;
   flex-direction: column;
-  gap: 20px;
-  color: #ffffff;
-  padding: 0px 0px 0px 25px;
+  justify-content:space-around ;
 }
 
 .contact-us__communication {
-  width: 100%;
+  width: 80%;
   display: flex;
   align-items: center;
   gap: 10px;
-  color: #ffffff;
+  justify-content: flex-end;
 }
 
 .contact-us__icon--call {
@@ -484,59 +486,74 @@ body {
   color: #ffffff;
 }
 
-.contact-us__registration {
+.contact-us__form{
   width: 100%;
-  height: 40px;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.contact-us__registration {
+  width: 95%;
+  height: 50px;
   display: flex;
   align-items: center;
   border-radius: 5px;
-  background-color: #ffffff;
-}
-
-.contact-us__registration--text {
-  margin-left: 10px;
+  border: none;
   font-family: "Montserrat", sans-serif;
   font-size: 12px;
-  text-align: center;
+  text-align: left;
   color: #1d242d;
+  padding-left: 10px;
 }
 
+
 .contact-us__message {
-  width: 100%;
-  height: 60px;
+  width: 95%;
+  height: 70px;
   display: flex;
   align-items: center;
   border-radius: 5px;
-  background-color: #ffffff;
+  font-family: "Montserrat", sans-serif;
+  font-size: 12px;
+  text-align: left;
+  color: #1d242d;
+  padding-left: 10px;
+  padding-top: 10px;
 }
+
 
 .contact-us__button {
   width: 200px;
   height: 45px;
+  border: none;
   background-color: #ffffff;
   border-radius: 56px;
   font-family: "Montserrat", sans-serif;
   font-weight: normal;
-  color: #1d242d;
   font-size: 15px;
-  border: none;
+  color: #1d242d;
   cursor: pointer;
 }
 
+.contact-us__button:hover{
+  background-color: #B0CDFF;
+}
+
 .contact-us__location {
-  width: 50%;
-  height: 100%;
+  width: 30%;
+  height: 95%;
   display: flex;
-  justify-content: space-evenly;
+  justify-content:center;
+  align-items: flex-start;
 }
 
 .contact-us__maps {
-  height: 60%;
+  height: 100%;
   display: flex;
   align-items: center;
   flex-direction: column;
-  justify-content: space-between;
-  gap: 36px;
+  justify-content:space-around;
 }
 
 .contact-us__container-maps {
@@ -563,7 +580,7 @@ body {
 }
 
 .contact-us__maps-url {
-  height: 80%;
+  height: 50%;
   align-items: center;
   display: flex;
 }
@@ -732,6 +749,10 @@ body {
   cursor: pointer;
 }
 
+.button__meter-measure:hover{
+  background-color: #FFD5B6;
+}
+
 .meter__calculator-result-head {
   width: 30%;
   display: flex;
@@ -792,4 +813,8 @@ body {
   color: #1d242d;
   background-color: #ffffff;
   cursor: pointer;
+}
+
+.button__quote:hover{
+  background-color: #FFD5B6;
 }
