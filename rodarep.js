@@ -3,20 +3,26 @@ document.getElementById('measure__block--bearings').addEventListener('click', fu
     window.location.href = 'medidor.html#meter__calculator-bearing';
 });
 
-const inputName= document.getElementById('name')
-const email= document.getElementById('email')
-const message= document.getElementById('message')
-const button = document.getElementById('contact-us__button')
 
-button.addEventListener('click', (evento) => {
-    evento.preventDefault();
-    const data = {
-        inputName:inputName.value,
-        email:email.value,
-        message: message.value  
-    } 
-    location.reload();
-    
+document.getElementById('contact-us__button').addEventListener('click', function (event) {
+    event.preventDefault();
+  
+    const form = document.getElementById('form');
+    const formData = new FormData(form);
+  
+    const nameValue = formData.get('name');
+    const phonevalue = formData.get('phone');
+    const emailValue = formData.get('email');
+    const messageValue = formData.get('message');
+  
+    const subject = encodeURIComponent("Nuevo mensaje de contacto");
+    const body = encodeURIComponent(
+      `Nombre: ${nameValue}\nTeléfono: ${phonevalue}\nCorreo: ${emailValue}\n\nMensaje:\n${messageValue}`
+    );
+  
+    const mailtoLink = `mailto:dianaamonroy@gmail.com?subject=${subject}&body=${body}`;
+    window.open(mailtoLink);
 
-    console.log(data);
-});
+     form.reset();
+
+})
