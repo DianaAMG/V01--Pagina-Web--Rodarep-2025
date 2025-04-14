@@ -9,33 +9,49 @@
     <title>Rodamientos y Repuestos del caribe</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet"/>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet"/>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" media=" (max-width: 1440px)" href="./styles.css" />
   </head>
 
   <body>
     <header class="header">
       <nav class="header__nav">
-        <a href="index.html#start__container " class="header__nav-logo">RODAREP</a>
+        <a href="index.html#start__container " class="header__nav-logo"
+          >RODAREP</a
+        >
         <ol class="header__nav-list">
           <li class="header__nav-list-card">
-            <a href="index.html#start__container " class="header__nav-link">Inicio</a>
+            <a href="index.html#start__container " class="header__nav-link"
+              >Inicio</a
+            >
           </li>
           <li class="header__nav-list-card">
-            <a href="index.html#portfolio" class="header__nav-link">Portafolio</a>
+            <a href="index.html#portfolio" class="header__nav-link"
+              >Portafolio</a
+            >
           </li>
           <li class="header__nav-list-card">
             <a href="index.html#make" class="header__nav-link">Qué hacemos</a>
           </li>
           <li class="header__nav-list-card">
-            <a href="index.html#choose-us" class="header__nav-link">Por qué elegirnos</a>
+            <a href="index.html#choose-us" class="header__nav-link"
+              >Por qué elegirnos</a
+            >
           </li>
           <li class="header__nav-list-card">
             <a href="index.html#measure" class="header__nav-link">Medidor</a>
           </li>
           <li class="header__nav-list-card">
-            <a href="index.html#contact-us" class="header__nav-link">Contáctanos</a>
+            <a href="index.html#contact-us" class="header__nav-link"
+              >Contáctanos</a
+            >
           </li>
         </ol>
       </nav>
@@ -47,20 +63,20 @@
       <div class="meter__container">
         <div class="meter-calculator__container-head">
           <div class="meter-calculator__block">
-            <h3 class="meter-calculator__title">MEDIDOR RÁPIDO DE RODAMIENTOS</h3>
+            <h3 class="meter-calculator__title">
+              MEDIDOR RÁPIDO DE RODAMIENTOS
+            </h3>
             <p class="meter-calculator__subtitle">
-            Calculamos según la numeración estándar de rodamientos del sistema
-            ISO
-             </p>
+              Calculamos según la numeración estándar de rodamientos del sistema
+              ISO
+            </p>
           </div>
         </div>
-    </div>
-
-      
+      </div>
 
       <div class="meter__calculator" id="meter__calculator-bearing">
         <div class="meter__calculator-container">
-          <div class="meter__calculator-head">
+          <!--<div class="meter__calculator-head">
             <h3 class="meter_calculator-title">TIPO DE RODAMIENTO</h3>
             <select class="meter__calculator-selection" name="bearing__type">
               <option class="selection__text" value="selección" selected>
@@ -115,7 +131,7 @@
                 Rodamiento de rodillos cilíndricos
               </option>
             </select>
-          </div>
+          </div> -->
 
           <div class="meter__calculator">
             <div class="meter__measures">
@@ -126,21 +142,43 @@
                 <p class="meter__measure-description">
                   Tamaño del eje donde encaja
                 </p>
-                <input type="number" name="d" id="d__internal" class="meter__measure-container" placeholder="d"> 
+                <input
+                  type="number"
+                  name="d"
+                  id="d__internal"
+                  class="meter__measure-container"
+                  placeholder="d"
+                />
 
                 <p class="meter__measure-text">Diámetro externo (D) → mm</p>
                 <p class="meter__measure-description">
                   Tamaño total del rodamiento
                 </p>
-                <input type="number" name="D" id="D__external" class="meter__measure-container" placeholder="D"> 
-                
+                <input
+                  type="number"
+                  name="D"
+                  id="D__external"
+                  class="meter__measure-container"
+                  placeholder="D"
+                />
 
                 <p class="meter__measure-text">Ancho (B) → mm</p>
                 <p class="meter__measure-description">Grosor del rodamiento</p>
-                <input type="number" name="B" id="B__width" class="meter__measure-container" placeholder="B"> 
+                <input
+                  type="number"
+                  name="B"
+                  id="B__width"
+                  class="meter__measure-container"
+                  placeholder="B"
+                />
               </div>
 
-              <input type="button" id="button__meter-measure" class="button__meter-measure" value="Calcular">
+              <input
+                type="button"
+                id="button__meter-measure"
+                class="button__meter-measure"
+                value="Calcular"
+              />
             </div>
 
             <div class="meter__calculator-result-head">
@@ -150,17 +188,26 @@
 
               <div class="meter__calculator-result">
                 <div class="meter__container-result">
-                  <p class="meter__container-result-text">6032</p>
+                  <p
+                    class="meter__container-result-text"
+                    id="meter__container-result-text"
+                  ></p>
                 </div>
 
                 <div class="meter__calculator-information">
-                  <p class="meter__calculator-information-text">
-                    Informacion del rodamiento
-                  </p>
+                  <p
+                    class="meter__calculator-information-text"
+                    id="meter__calculator-information-text"
+                  ></p>
                 </div>
               </div>
 
-              <input type="button" class="button__quote" value="Cotizar" />
+              <a
+                class="button__quote"
+                href="https://api.whatsapp.com/send?phone=573167437807&text=Hola,quiero%20cotizar%20el%20rodamiento"
+                target="_blank"
+                >Cotizar
+              </a>
             </div>
           </div>
         </div>
@@ -178,6 +225,5 @@
     </footer>
 
     <script src="./medidor.js"></script>
-
   </body>
 </html>

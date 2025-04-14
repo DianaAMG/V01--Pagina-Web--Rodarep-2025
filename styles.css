@@ -481,8 +481,15 @@ body {
   justify-content: space-around;
 }
 
+.contact-us__container-icons {
+  width: 45%;
+  display: flex;
+  align-items: center;
+  justify-content: left;
+}
+
 .contact-us__communication {
-  width: 80%;
+  width: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -505,6 +512,7 @@ body {
 }
 
 .contact-us__communication-text {
+  margin-left: 5px;
   font-family: "Montserrat", sans-serif;
   font-weight: bold;
   font-size: 12px;
@@ -776,7 +784,7 @@ body {
   border-radius: 10px;
   background-color: #ffffff;
   border: none;
-  text-align:center;
+  text-align: center;
 }
 
 input::-webkit-outer-spin-button,
@@ -831,6 +839,7 @@ input::-webkit-inner-spin-button {
   font-family: "Bebas Neue", sans-serif;
   font-size: 40px;
   color: #1d242d;
+  text-align: center;
 }
 
 .meter__calculator-information {
@@ -839,6 +848,7 @@ input::-webkit-inner-spin-button {
   margin: 5px;
   display: flex;
   align-items: center;
+  justify-content: center;
   border-radius: 10px;
   background-color: #ffffff;
 }
@@ -855,12 +865,16 @@ input::-webkit-inner-spin-button {
   width: 200px;
   height: 45px;
   border: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   border-radius: 56px;
   font-family: "Montserrat", sans-serif;
   font-size: 15px;
   color: #1d242d;
   background-color: #ffffff;
   cursor: pointer;
+  text-decoration: none;
 }
 
 .button__quote:hover {
