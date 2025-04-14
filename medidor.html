@@ -17,10 +17,10 @@
   <body>
     <header class="header">
       <nav class="header__nav">
-        <a href="index.html#star" class="header__nav-logo">RODAREP</a>
+        <a href="index.html#start__container " class="header__nav-logo">RODAREP</a>
         <ol class="header__nav-list">
           <li class="header__nav-list-card">
-            <a href="index.html#star" class="header__nav-link">Inicio</a>
+            <a href="index.html#start__container " class="header__nav-link">Inicio</a>
           </li>
           <li class="header__nav-list-card">
             <a href="index.html#portfolio" class="header__nav-link">Portafolio</a>
@@ -44,17 +44,19 @@
     <div class="space"></div>
 
     <main class="meter">
-      <div class="meter-calculator__container-head">
-        <div class="meter-calculator__block">
-          <h3 class="meter-calculator__title">MEDIDOR RÁPIDO DE RODAMIENTOS</h3>
-          <p class="meter-calculator__subtitle">
+      <div class="meter__container">
+        <div class="meter-calculator__container-head">
+          <div class="meter-calculator__block">
+            <h3 class="meter-calculator__title">MEDIDOR RÁPIDO DE RODAMIENTOS</h3>
+            <p class="meter-calculator__subtitle">
             Calculamos según la numeración estándar de rodamientos del sistema
             ISO
-          </p>
+             </p>
+          </div>
         </div>
-      </div>
+    </div>
 
-      <div class="space"></div>
+      
 
       <div class="meter__calculator" id="meter__calculator-bearing">
         <div class="meter__calculator-container">
@@ -119,29 +121,26 @@
             <div class="meter__measures">
               <h3 class="meter__measures-subtitle">Ingresa las medidas</h3>
 
-              <div class="meter__insert-measure">
+              <div class="meter__insert-measure" id="meter__insert-measure">
                 <p class="meter__measure-text">Diámetro interno (d) → mm</p>
                 <p class="meter__measure-description">
                   Tamaño del eje donde encaja
                 </p>
-                <div class="meter__measure-container"></div>
+                <input type="number" name="d" id="d__internal" class="meter__measure-container" placeholder="d"> 
 
                 <p class="meter__measure-text">Diámetro externo (D) → mm</p>
                 <p class="meter__measure-description">
                   Tamaño total del rodamiento
                 </p>
-                <div class="meter__measure-container"></div>
+                <input type="number" name="D" id="D__external" class="meter__measure-container" placeholder="D"> 
+                
 
                 <p class="meter__measure-text">Ancho (B) → mm</p>
                 <p class="meter__measure-description">Grosor del rodamiento</p>
-                <div class="meter__measure-container"></div>
+                <input type="number" name="B" id="B__width" class="meter__measure-container" placeholder="B"> 
               </div>
 
-              <input
-                type="button"
-                class="button__meter-measure"
-                value="Calcular"
-              />
+              <input type="button" id="button__meter-measure" class="button__meter-measure" value="Calcular">
             </div>
 
             <div class="meter__calculator-result-head">
@@ -178,7 +177,7 @@
       </div>
     </footer>
 
-    <script src="./rodarep.js"></script>
+    <script src="./medidor.js"></script>
 
   </body>
 </html>

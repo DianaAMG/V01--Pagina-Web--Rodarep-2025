@@ -10,18 +10,28 @@
     <title>Rodamientos y Repuestos del caribe</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap"rel="stylesheet"/>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet"/>
-    <link rel="stylesheet" media="screen and (max-width: 1440px)" href="./styles.css"/>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      media="screen and (max-width: 1440px)"
+      href="./styles.css"
+    />
   </head>
 
   <body>
     <header class="header">
       <nav class="header__nav" id="navigation_menu">
-        <a href="#navigation_menu" class="header__nav-logo">RODAREP</a>
+        <a href="index.html#start" class="header__nav-logo">RODAREP</a>
         <ol class="header__nav-list">
           <li class="header__nav-list-card">
-            <a href="#star" class="header__nav-link">Inicio</a>
+            <a href="index.html#start" class="header__nav-link">Inicio</a>
           </li>
           <li class="header__nav-list-card">
             <a href="#portfolio" class="header__nav-link">Portafolio</a>
@@ -42,19 +52,18 @@
       </nav>
     </header>
 
-
     <main>
-      <div class="space" id="star"></div>
-      <section class="start" >
-        <div class="start__container">
-          <h3 class="start__title">Rodamientos y Repuestos del Caribe</h3>
-          <p class="start__subtitle">
-            Calidad y variedad en repuestos y rodamientos en Santa Marta
-          </p>
+      <div class="space"></div>
+      <section class="start__container-star">
+        <div class="start">
+          <div class="start__container">
+            <h3 class="start__title">Rodamientos y Repuestos del Caribe</h3>
+            <p class="start__subtitle">
+              Calidad y variedad en repuestos y rodamientos en Santa Marta
+            </p>
+          </div>
         </div>
       </section>
-
-      <div class="space"></div>
 
       <section class="portfolio" id="portfolio">
         <div class="container">
@@ -96,11 +105,12 @@
             </p>
             <p class="make_content-text">¡Tu mejor aliado en movimiento!</p>
 
-            <input
-              type="button"
+            <a
               class="button__make-content"
-              value="Contáctanos"
-            />
+              href="https://api.whatsapp.com/send?phone=573167437807&text=Hola,quiero%20tener%20más%20información%20de%20sus%20productos"
+              target="_blank"
+              >Contáctanos</a
+            >
           </div>
         </div>
 
@@ -162,7 +172,11 @@
             </div>
           </div>
 
-          <div class="measure__block--bearings" id="measure__block--bearings">
+          <div
+            class="measure__block--bearings"
+            id="measure__block--bearings"
+            onclick="myFunction()"
+          >
             <h3 class="measure__bearings--text">
               Medidor Rápido de Rodamientos
             </h3>
@@ -190,22 +204,48 @@
             </p>
           </div>
 
+          <form id="form" class="contact-us__form">
+            <input
+              type="text"
+              name="name"
+              id="name"
+              class="contact-us__registration"
+              placeholder="Nombre Completo"
+            />
 
-         <form id="form" class="contact-us__form">
-            <input type="text" name="name" id="name" class="contact-us__registration"  placeholder="Nombre Completo"> 
+            <input
+              type="text"
+              name="phone"
+              id="phone"
+              class="contact-us__registration"
+              placeholder="Teléfono de contacto"
+            />
 
-            <input type="text" name="phone" id="phone" class="contact-us__registration" placeholder="Teléfono de contacto"> 
-          
-            <input type="text" name="email"  id="email" class="contact-us__registration"  placeholder="correo electronico">
-          
-            <textarea name="message" id="message" class="contact-us__message"  cols="30" rows="5" placeholder="Mensaje"></textarea>
+            <input
+              type="text"
+              name="email"
+              id="email"
+              class="contact-us__registration"
+              placeholder="correo electronico"
+            />
 
-            <input type="submit" id="contact-us__button" class="contact-us__button" value="Enviar"> </input>
-         </form>  
+            <textarea
+              name="message"
+              id="message"
+              class="contact-us__message"
+              cols="30"
+              rows="5"
+              placeholder="Mensaje"
+            ></textarea>
 
-
+            <input
+              type="submit"
+              id="contact-us__button"
+              class="contact-us__button"
+              value="Enviar"
+            />
+          </form>
         </div>
-        
 
         <div class="contact-us__location">
           <div class="contact-us__maps">
@@ -239,6 +279,6 @@
       </div>
     </footer>
 
-    <script src="./rodarep.js"></script>
+    <script src="./index.js"></script>>
   </body>
 </html>

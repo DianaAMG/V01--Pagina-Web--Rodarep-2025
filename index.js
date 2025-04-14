@@ -1,8 +1,6 @@
-
-document.getElementById('measure__block--bearings').addEventListener('click', function () {
-    window.location.href = 'medidor.html#meter__calculator-bearing';
-});
-
+ function myFunction() {
+    window.location.href = 'medidor.html#meter__containerg';
+}
 
 document.getElementById('contact-us__button').addEventListener('click', function (event) {
     event.preventDefault();
@@ -26,3 +24,6 @@ document.getElementById('contact-us__button').addEventListener('click', function
      form.reset();
 
 })
+
+
+
