@@ -1,3 +1,5 @@
+import bearings from "./constantes.js";
+
 document
   .getElementById("button__meter-measure")
   .addEventListener("click", function (event) {
@@ -6,11 +8,6 @@ document
     const d = parseInt(document.getElementById("d__internal").value);
     const D = parseInt(document.getElementById("D__external").value);
     const B = parseInt(document.getElementById("B__width").value);
-
-    const bearings = [
-      { ref: 6203, d: 17, D: 40, B: 12, info: "Información de tu rodamiento" },
-      { ref: 6300, d: 10, D: 35, B: 11 },
-    ];
 
     const informationsBearings = bearings.find(
       (rodamiento) =>
@@ -32,4 +29,15 @@ document
     document.getElementById("d__internal").value = "";
     document.getElementById("D__external").value = "";
     document.getElementById("B__width").value = "";
+
+    document
+      .getElementById("button__quote")
+      .addEventListener("click", function () {
+        window.open(
+          `https://api.whatsapp.com/send?phone=573167437807&text=Hola,%20quiero%20conocer%20el%20valor%20del%20rodamiento%20REF:%20${encodeURIComponent(
+            informationsBearings.ref
+          )}`,
+          "_blank"
+        );
+      });
   });
