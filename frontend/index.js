@@ -25,3 +25,35 @@ document
 
     form.reset();
   });
+
+const form = document.getElementById("form");
+
+form.addEventListener("submit", async (e) => {
+  e.preventDefault();
+
+  const data = {
+    name: document.getElementById("name").value,
+    phone: document.getElementById("phone").value,
+    email: document.getElementById("email").value,
+  };
+
+  try {
+    const response = await fetch("http://localhost:3000/creacion", {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify(data),
+    });
+
+    const result = await response.json();
+
+    if (response.ok) {
+      alert("✅ Tu mensaje fue enviado con éxito.");
+      form.reset();
+    } else {
+      alert("❌ Error al enviar el mensaje: " + result.error);
+    }
+  } catch (error) {
+    alert("❌ No se pudo enviar el formulario.");
+    console.error(error);
+  }
+});
