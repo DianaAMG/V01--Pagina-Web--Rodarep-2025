@@ -2,7 +2,8 @@ function function__bearings() {
   window.location.href = "medidor.html#meter__container";
 }
 
-document
+/*Para crear envio de correo por mailito, se puede usar el siguiente código:
+  document
   .getElementById("contact-us__button")
   .addEventListener("click", function (event) {
     event.preventDefault();
@@ -23,8 +24,9 @@ document
     const mailtoLink = `mailto:dianaamonroy@gmail.com?subject=${subject}&body=${body}`;
     window.open(mailtoLink);
 
+    
     form.reset();
-  });
+  });*/
 
 const form = document.getElementById("form");
 
@@ -35,6 +37,7 @@ form.addEventListener("submit", async (e) => {
     name: document.getElementById("name").value,
     phone: document.getElementById("phone").value,
     email: document.getElementById("email").value,
+    message: document.getElementById("message").value,
   };
 
   try {
@@ -47,6 +50,14 @@ form.addEventListener("submit", async (e) => {
     const result = await response.json();
 
     if (response.ok) {
+      // 2. Abrir cliente de correo después de guardar
+      const subject = encodeURIComponent("Nuevo mensaje de contacto");
+      const body = encodeURIComponent(
+        `Nombre: ${data.name}\nTeléfono: ${data.phone}\nCorreo: ${data.email}\n\nMensaje:\n${data.message}`
+      );
+      const mailtoLink = `mailto:dianaamonroy@gmail.com?subject=${subject}&body=${body}`;
+      window.open(mailtoLink);
+
       alert("✅ Tu mensaje fue enviado con éxito.");
       form.reset();
     } else {

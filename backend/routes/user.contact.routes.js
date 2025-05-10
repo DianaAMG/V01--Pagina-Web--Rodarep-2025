@@ -14,9 +14,9 @@ router.get("/contactos", async (req, res) => {
 });
 
 router.post("/creacion", async (req, res) => {
-  const { name, email, phone } = req.body;
+  const { name, email, phone,message } = req.body;
 
-  if (!name || !email || !phone) {
+  if (!name || !email || !phone || !message) {
     return res
       .status(400)
       .json({ error: "Faltan datos en el cuerpo de la solicitud" });
@@ -24,7 +24,7 @@ router.post("/creacion", async (req, res) => {
 
   try {
     const nuevoContacto = await prisma.user_contact.create({
-      data: { name, email, phone },
+      data: { name, email, phone,message },
     });
 
     res.json({ mensaje: "✅ Contacto creado", contacto: nuevoContacto });

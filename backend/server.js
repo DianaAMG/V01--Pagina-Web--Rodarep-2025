@@ -15,7 +15,7 @@ const port = 3000;
 
 
 // Usar middleware para que el servidor pueda entender datos JSON y manejar CORS
-app.use(cors({ origin: 'http://localhost:4200' })); // Permite peticiones desde otros orígenes (como tu frontend)
+app.use(cors({ origin: 'http://127.0.0.1:5500' })); // Permite peticiones desde otros orígenes (como tu frontend)
 app.use(morgan("dev")); // Middleware para registrar las peticiones HTTP en la consola
 app.use(express.json()); // Middleware para parsear el cuerpo de las peticiones a JSON
 
