@@ -1,7 +1,3 @@
-function function__bearings() {
-  window.location.href = "medidor.html#meter__container";
-}
-
 /*Para crear envio de correo por mailito, se puede usar el siguiente código:
   document
   .getElementById("contact-us__button")
@@ -28,6 +24,10 @@ function function__bearings() {
     form.reset();
   });*/
 
+function function__bearings() {
+  window.location.href = "medidor.html#meter__container";
+}
+
 const form = document.getElementById("form");
 
 form.addEventListener("submit", async (e) => {
@@ -47,6 +47,7 @@ form.addEventListener("submit", async (e) => {
       body: JSON.stringify(data),
     });
 
+    console.log("Response:", response); // Log the response object
     const result = await response.json();
 
     if (response.ok) {

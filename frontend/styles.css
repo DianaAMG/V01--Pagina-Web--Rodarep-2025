@@ -83,7 +83,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  background-image: url(./img/rodamientos\ fondo\ web.jpg);
+  background-image: url(./img/rodamientos\ fondo\ web\ chatgpt.png);
   position: absolute;
   background-size: cover;
   background-position: center;
@@ -190,7 +190,7 @@ body {
 .make_container {
   width: 100%;
   height: 400px;
-  background-image: url(./img/rodamientos\ fondo\ web.jpg);
+  background-image: url(./img/rodamientos\ fondo\ web\ chatgpt.png);
   position: absolute;
   background-size: cover;
   background-position: center;
@@ -369,7 +369,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  background-image: url(./img/rodamientos\ fondo\ web.jpg);
+  background-image: url(./img/rodamientos\ fondo\ web\ chatgpt.png);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -663,7 +663,7 @@ body {
   justify-content: center;
   display: flex;
   align-items: center;
-  background-image: url(./img/rodamientos\ fondo\ web.jpg);
+  background-image: url(./img/rodamientos\ fondo\ web\ chatgpt.png);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;

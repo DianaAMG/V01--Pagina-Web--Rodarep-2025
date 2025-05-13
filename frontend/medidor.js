@@ -26,10 +26,35 @@ document
         "No se encontró información";
     }
 
+    // Guardar en la base de datos
+    fetch("http://localhost:3000/new_bearing", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify({
+        d__internal: d,
+        d__external: D,
+        b__width: B,
+        code: informationsBearings.ref,
+        type: informationsBearings.info,
+      }),
+    })
+      .then((response) => response.json())
+      .then((data) => {
+        console.log("Rodamiento guardado:", data);
+      })
+      .catch((error) => {
+        console.error("Error al guardar el rodamiento:", error);
+      });
+
+    // Limpiar campos
+
     document.getElementById("d__internal").value = "";
     document.getElementById("D__external").value = "";
     document.getElementById("B__width").value = "";
 
+    //Solicitar cotizacion por whatsapp del rodamiento ingresado y encontrado
     document
       .getElementById("button__quote")
       .addEventListener("click", function () {
@@ -41,6 +66,3 @@ document
         );
       });
   });
-
-
-  
