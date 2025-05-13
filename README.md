@@ -1,6 +1,6 @@
 # RODAREP 2025 – Página Web Corporativa
 
-Este repositorio contiene el desarrollo completo (frontend + backend) del sitio web para **Rodarep**, una empresa enfocada en la comercialización de de repuestos automotrices.  
+Este repositorio contiene el desarrollo completo (frontend + backend) del sitio web para **Rodarep**, una empresa enfocada en la comercialización de repuestos automotrices.  
 
 ---
 
