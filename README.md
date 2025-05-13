@@ -10,10 +10,38 @@ Puedes ver el diseño original del sitio aquí:
 👉 https://www.figma.com/proto/ZxcX2UBdnwNvXjV8BRO55K/Rodarep?node-id=0-1&t=dnPw0GN69Icfhh6E-1
 
 ---
+## 🖥️ ¿Qué ofrece este proyecto?
+
+- Secciones informativas sobre la empresa.
+- Catálogo visual de productos: **rodamientos, retenedores, chumaceras, poleas.**
+- Explicación de los servicios.
+- Herramienta **"Medidor Rápido de Rodamientos"** para facilitar la búsqueda de piezas.
+- Formulario de contacto y ubicación en Google Maps.
+
+---
+
+## 📏 Medidor de Rodamientos
+
+Este módulo está en `medidor.html` y permite:
+
+1. Ingresar medidas del rodamiento:
+   - Diámetro interno (d)
+   - Diámetro externo (D)
+   - Ancho (B)
+
+2. Ver el código estándar del rodamiento.
+3. Cotizar directamente por WhatsApp.
 
 ##  Estructura del Proyecto
 📁 backend → Lógica de servidor, controladores y conexión con base de datos (PostgreSQL).
+
 📁 frontend → Interfaz 
+/img/ --> Imágenes y fondos
+/index.html --> Página principal de presentación
+/index.js --> Código JS para lógica interactiva relacionada con index.html
+/medidor.html --> Herramienta de cálculo de rodamientos
+/medidor.js--> Código JS para lógica interactiva relacionada con medidor.html
+/styles.css --> Estilos principales del sitio
 
 ## 🔧 Tecnologías utilizadas
 
@@ -25,17 +53,29 @@ Puedes ver el diseño original del sitio aquí:
 - Node.js + Express
 - PostgreSQL
 - Controladores REST para manejo de datos
-
 ---
 
 ## 🔌 Funcionalidad clave
 
 - Conexión entre frontend y backend
 - CRUD básico conectado a base de datos
-
 ---
 
 ## se puede ejecutar el proyecto localmente
+
+**1.Arrancar el backend con servidor hecho con Node.js (Express)**
+- Descargar o clonar el repositorio
+- para instalar dependencias de package.json, inicializamos con el comando , luego de ubicarnos en la carpeta del proyecto:
+  **npm install**
+  -Verificamos que en el package.jason esté el script **"dev": "nodemon server.js"**, esto permitirá reiniciar automáticamente el servidor cada vez que detecta cambios en 
+   tus archivos de código.
+  -Ejecutamos el script que hemos "personalizado" en el package.jason, con el siguiente comando, para reiniciar solo cuando hayan cambios y no manualmente
+    **npm run dev**
+  -En estos pasos tenemos ya corriendo en local, el puero elegido el proyecto y en consola debe mostrar el mensaje **Servidor escuchando en http://localhost:3000**
+  -Se verifica yendo al navegador a **http://localhost:3000**, mostrando el mensaje en jason **{"mensaje":"Bienvenido a Rodarep"}**.
+  
+
+
 
 ## estado del proyecto
 ✅ Conexión front-back
