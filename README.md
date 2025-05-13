@@ -36,12 +36,17 @@ Este módulo está en `medidor.html` y permite:
 📁 backend → Lógica de servidor, controladores y conexión con base de datos (PostgreSQL).
 
 📁 frontend → Interfaz 
-/img/ --> Imágenes y fondos
-/index.html --> Página principal de presentación
-/index.js --> Código JS para lógica interactiva relacionada con index.html
-/medidor.html --> Herramienta de cálculo de rodamientos
-/medidor.js--> Código JS para lógica interactiva relacionada con medidor.html
-/styles.css --> Estilos principales del sitio
+ -/img/ --> Imágenes y fondos
+
+ -/index.html --> Página principal de presentación
+
+ -/index.js --> Código JS para lógica interactiva relacionada con index.html
+
+ -/medidor.html --> Herramienta de cálculo de rodamientos
+
+ -/medidor.js--> Código JS para lógica interactiva relacionada con medidor.html
+
+ -/styles.css --> Estilos principales del sitio
 
 ## 🔧 Tecnologías utilizadas
 
@@ -67,12 +72,15 @@ Este módulo está en `medidor.html` y permite:
 - Descargar o clonar el repositorio
 - para instalar dependencias de package.json, inicializamos con el comando , luego de ubicarnos en la carpeta del proyecto:
   **npm install**
-  -Verificamos que en el package.jason esté el script **"dev": "nodemon server.js"**, esto permitirá reiniciar automáticamente el servidor cada vez que detecta cambios en 
+  
+-Verificamos que en el package.jason esté el script **"dev": "nodemon server.js"**, esto permitirá reiniciar automáticamente el servidor cada vez que detecta cambios en 
    tus archivos de código.
-  -Ejecutamos el script que hemos "personalizado" en el package.jason, con el siguiente comando, para reiniciar solo cuando hayan cambios y no manualmente
+  
+-Ejecutamos el script que hemos "personalizado" en el package.jason, con el siguiente comando, para reiniciar solo cuando hayan cambios y no manualmente
     **npm run dev**
-  -En estos pasos tenemos ya corriendo en local, el puero elegido el proyecto y en consola debe mostrar el mensaje **Servidor escuchando en http://localhost:3000**
-  -Se verifica yendo al navegador a **http://localhost:3000**, mostrando el mensaje en jason **{"mensaje":"Bienvenido a Rodarep"}**.
+  
+-En estos pasos tenemos ya corriendo en local, el puero elegido el proyecto y en consola debe mostrar el mensaje **Servidor escuchando en http://localhost:3000**
+-Se verifica yendo al navegador a **http://localhost:3000**, mostrando el mensaje en jason **{"mensaje":"Bienvenido a Rodarep"}**.
   
 
 
