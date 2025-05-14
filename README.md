@@ -83,6 +83,13 @@ Este módulo está en `medidor.html` y permite:
 - En estos pasos tenemos ya corriendo en local, el puero elegido el proyecto y en consola debe mostrar el mensaje **Servidor escuchando en http://localhost:3000**
 
 - El navegador muestra el mensaje en jason **{"mensaje":"Bienvenido a Rodarep"}**.
+
+**2.Conectar la DB con visual Studio Code desde la terminal**
+- Correr comenado en terminal 
+   ```bash
+      psql -h localhost -p 5432 -U tu_usuario -d tu_base_de_datos
+   ```
+
   
 
 ## estado del proyecto
