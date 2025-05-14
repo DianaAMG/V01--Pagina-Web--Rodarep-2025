@@ -73,13 +73,18 @@ Este módulo está en `medidor.html` y permite:
 - inicializamos con el comando 
   ```bash
   npm install
+  ```
   
-  
--Ejecutamos el script con el comando
- npm run dev
   
 
+- Ejecutamos el script con el comando
+
+```bash
+npm run dev
+```
   
+
+
 -En estos pasos tenemos ya corriendo en local, el puero elegido el proyecto y en consola debe mostrar el mensaje **Servidor escuchando en http://localhost:3000**
 
 -El navegador muestra el mensaje en jason **{"mensaje":"Bienvenido a Rodarep"}**.
