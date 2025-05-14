@@ -70,18 +70,19 @@ Este módulo está en `medidor.html` y permite:
 
 **1.Arrancar el backend con servidor hecho con Node.js (Express)**
 - Descargar o clonar el repositorio
-- para instalar dependencias de package.json, inicializamos con el comando , luego de ubicarnos en la carpeta del proyecto:
-  **npm install**
+- inicializamos con el comando 
+  ```bash 
+  npm install```
   
--Verificamos que en el package.jason esté el script **"dev": "nodemon server.js"**, esto permitirá reiniciar automáticamente el servidor cada vez que detecta cambios en 
-   tus archivos de código.
   
--Ejecutamos el script que hemos "personalizado" en el package.jason, con el siguiente comando, para reiniciar solo cuando hayan cambios y no manualmente
-    **npm run dev**
+-Ejecutamos el script con el comando
+    ```bash
+    npm run dev```
   
 -En estos pasos tenemos ya corriendo en local, el puero elegido el proyecto y en consola debe mostrar el mensaje **Servidor escuchando en http://localhost:3000**
 -Se verifica yendo al navegador a **http://localhost:3000**, mostrando el mensaje en jason **{"mensaje":"Bienvenido a Rodarep"}**.
   
+
 
 
 
