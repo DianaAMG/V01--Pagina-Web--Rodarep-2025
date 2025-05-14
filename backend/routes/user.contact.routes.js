@@ -1,3 +1,4 @@
+//  Importar los módulos necesarios
 const express = require("express");
 const { PrismaClient } = require("@prisma/client");
 const prisma = new PrismaClient();
@@ -37,7 +38,6 @@ router.post("/creacion", async (req, res) => {
 });
 
 // obtener todos los rodamientos GET
-
 router.get("/bearing", async (req, res) => {
   try {
     const rodamientos = await prisma.bearing.findMany(); // Trae todos los registros

@@ -24,7 +24,6 @@ app.get("/", (req, res) => {
   res.json({ mensaje: "Bienvenido a Rodarep" });
 });
 
-//Rutas del frontend
 
 // Rutas de nuestro servidor
 app.use("/", userContactRoutes); // Usar las rutas de contacto de usuario

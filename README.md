@@ -48,11 +48,13 @@ Este módulo está en `medidor.html` y permite:
 
 - /styles.css --> Estilos principales del sitio
 
+
 ## 🔧 Tecnologías utilizadas
 
 ### Frontend:
 - HTML5, CSS3, JavaScript
 - Conexión a API REST
+- Uso de la metodología de trabajo BEM en el CSS 
 
 ### Backend:
 - Node.js + Express
@@ -115,9 +117,9 @@ Este módulo está en `medidor.html` y permite:
    ```
 
 ## estado del proyecto
-✅ Conexión front-back
-✅ Integración con base de datos
-🚧Actualmente el proyecto se encuentra en fase de desarrollo visual de los componentes finales y en la integración con una funcionalidad de e-commerce
+- ✅ Conexión front-back
+- ✅ Integración con base de datos
+- 🚧Actualmente el proyecto se encuentra en fase de desarrollo visual de los componentes finales y en la integración con una funcionalidad de e-commerce
 para la sección de portafolio. 
 
 Desarrollado con dedicación por Diana Alejandra Monroy García.
