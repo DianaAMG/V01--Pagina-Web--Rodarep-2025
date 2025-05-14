@@ -84,13 +84,35 @@ Este módulo está en `medidor.html` y permite:
 
 - El navegador muestra el mensaje en jason **{"mensaje":"Bienvenido a Rodarep"}**.
 
-**2.Conectar la DB con visual Studio Code desde la terminal**
-- Correr comenado en terminal 
+
+**2.Instalar prisma ORM para interaccion con  PostgreSQL (traduce objetos de JavaScript en datos de base de datos y viceversa.)**
+-  Instala Prisma CLI y cliente
+   ```bash
+      npm install prisma --save-dev
+      npm install @prisma/client
+   ```
+
+- Se inicializa Prisma
+   ```bash
+      npx prisma init
+   ```
+   - Dentro está el archivo schema.prisma donde defines tu modelo de datos (tabla) 
+   - En el archivo .env se coloca la cadena de conexión a PostgreSQL.
+   
+- Aplica la migración para crear la base de datos
+   ```bash
+      npx prisma migrate dev --name init
+   ```
+- Si se modifica el archvio es indispensable para conectar nuevamente usar:
+   ```bash
+      npx prisma generate
+   ```
+   
+**3.Conectar la DB con visual Studio Code desde la terminal**
+- Correr comando en terminal 
    ```bash
       psql -h localhost -p 5432 -U tu_usuario -d tu_base_de_datos
    ```
-
-  
 
 ## estado del proyecto
 ✅ Conexión front-back
