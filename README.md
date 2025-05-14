@@ -71,7 +71,7 @@ Este módulo está en `medidor.html` y permite:
 **1.Arrancar el backend con servidor hecho con Node.js (Express)**
 - Descargar o clonar el repositorio
 - inicializamos con el comando 
-  ```npm install´´´
+  ``` bash npm install
   
   
 -Ejecutamos el script con el comando
@@ -83,9 +83,6 @@ Este módulo está en `medidor.html` y permite:
 
 -El navegador muestra el mensaje en jason **{"mensaje":"Bienvenido a Rodarep"}**.
   
-
-
-
 
 ## estado del proyecto
 ✅ Conexión front-back
