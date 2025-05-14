@@ -71,13 +71,12 @@ Este módulo está en `medidor.html` y permite:
 **1.Arrancar el backend con servidor hecho con Node.js (Express)**
 - Descargar o clonar el repositorio
 - inicializamos con el comando 
-  ```bash 
-  npm install
+  ```npm install´´´
   
   
 -Ejecutamos el script con el comando
-   ```bash
-   npm run dev
+   ``` npm install ´´´
+  
 
   
 -En estos pasos tenemos ya corriendo en local, el puero elegido el proyecto y en consola debe mostrar el mensaje **Servidor escuchando en http://localhost:3000**
