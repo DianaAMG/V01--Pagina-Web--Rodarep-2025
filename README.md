@@ -76,8 +76,7 @@ Este módulo está en `medidor.html` y permite:
   
   
 -Ejecutamos el script con el comando
-```
-npm install 
+ npm run dev
   
 
   
