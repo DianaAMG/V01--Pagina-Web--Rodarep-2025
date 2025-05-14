@@ -36,17 +36,17 @@ Este módulo está en `medidor.html` y permite:
 📁 backend → Lógica de servidor, controladores y conexión con base de datos (PostgreSQL).
 
 📁 frontend → Interfaz 
- -/img/ --> Imágenes y fondos
+- /img/ --> Imágenes y fondos
 
- -/index.html --> Página principal de presentación
+- /index.html --> Página principal de presentación
 
- -/index.js --> Código JS para lógica interactiva relacionada con index.html
+- /index.js --> Código JS para lógica interactiva relacionada con index.html
 
- -/medidor.html --> Herramienta de cálculo de rodamientos
+- /medidor.html --> Herramienta de cálculo de rodamientos
 
- -/medidor.js--> Código JS para lógica interactiva relacionada con medidor.html
+- /medidor.js--> Código JS para lógica interactiva relacionada con medidor.html
 
- -/styles.css --> Estilos principales del sitio
+- /styles.css --> Estilos principales del sitio
 
 ## 🔧 Tecnologías utilizadas
 
@@ -71,17 +71,14 @@ Este módulo está en `medidor.html` y permite:
 **1.Arrancar el backend con servidor hecho con Node.js (Express)**
 - Descargar o clonar el repositorio
 - inicializamos con el comando 
-  ```bash
-   npm install
-  ```
+   ```bash
+      npm install
+   ```
   
-  
-
 - Ejecutamos el script con el comando
-
-```bash
-   npm run dev
-```
+   ```bash
+      npm run dev
+   ```
   
 - En estos pasos tenemos ya corriendo en local, el puero elegido el proyecto y en consola debe mostrar el mensaje **Servidor escuchando en http://localhost:3000**
 
