@@ -71,11 +71,12 @@ Este módulo está en `medidor.html` y permite:
 **1.Arrancar el backend con servidor hecho con Node.js (Express)**
 - Descargar o clonar el repositorio
 - inicializamos con el comando 
-  ``` bash npm install
+  
+  npm install
   
   
 -Ejecutamos el script con el comando
-   ``` npm install ´´´
+   npm install 
   
 
   
