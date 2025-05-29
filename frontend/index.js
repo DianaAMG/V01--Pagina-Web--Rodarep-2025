@@ -28,6 +28,20 @@ function function__bearings() {
   window.location.href = "medidor.html#meter__container";
 }
 
+function function__movement(){
+  window.open("http://rodarep.com/categoria-producto/transmision/?v=ab6c04006660", "_blank");
+}
+
+function function__retentores() {
+  window.open("http://rodarep.com/categoria-producto/sellado-proteccion/?v=ab6c04006660", "_blank");
+}
+
+function function__soport(){
+  window.open("http://rodarep.com/categoria-producto/soportes-y-montaje/?v=ab6c04006660", "_blank");
+}
+
+
+
 const form = document.getElementById("form");
 
 form.addEventListener("submit", async (e) => {

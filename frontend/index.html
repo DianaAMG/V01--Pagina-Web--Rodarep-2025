@@ -20,7 +20,6 @@
     />
     <link
       rel="stylesheet"
-      media="screen and (max-width: 1440px)"
       href="./styles.css"
     />
   </head>
@@ -28,7 +27,7 @@
   <body>
     <header class="header">
       <nav class="header__nav" id="navigation_menu">
-        <a href="index.html#start" class="header__nav-logo">RODAREP</a>
+        <a href="index.html#start" class="header__nav-logo">RODAREP </a>
         <ol class="header__nav-list">
           <li class="header__nav-list-card">
             <a href="index.html#start" class="header__nav-link">Inicio</a>
@@ -46,8 +45,12 @@
             <a href="#measure" class="header__nav-link">Medidor</a>
           </li>
           <li class="header__nav-list-card">
-            <a href="#contact-us" class="header__nav-link">Contáctanos</a>
+            <a href="#contact-us" class="header__nav-link">Contacto</a>
           </li>
+           <li class="header__nav-list-card">
+            <a href="http://rodarep.com/?v=ab6c04006660" target="_blank" class="header__nav-link">Tienda</a>
+          </li>
+
         </ol>
       </nav>
     </header>
@@ -67,22 +70,27 @@
 
       <section class="portfolio" id="portfolio">
         <div class="container">
-          <div class="portfolio__products">
+          
+          <div class="portfolio__products"
+          onclick="function__movement()">
             <h2 class="portfolio__title">RODAMIENTOS</h2>
             <div class="products rodamientos"></div>
           </div>
 
-          <div class="portfolio__products">
+          <div class="portfolio__products"
+             onclick="function__retentores()">
             <h2 class="portfolio__title">RETENEDORES</h2>
             <div class="products retenedores"></div>
           </div>
 
-          <div class="portfolio__products">
+          <div class="portfolio__products"
+          onclick="function__soport()">
             <h2 class="portfolio__title">CHUMACERAS</h2>
             <div class="products chumaceras"></div>
           </div>
 
-          <div class="portfolio__products">
+          <div class="portfolio__products"
+          onclick="function__movement()">
             <h2 class="portfolio__title">POLEAS</h2>
             <div class="products poleas"></div>
           </div>
@@ -279,12 +287,12 @@
 
       <div class="copyright">
         <p class="copyright__text">
-          © 2024 RODAREP - Rodamientos y Repuestos del Caribe
+          © 2025 RODAREP - Rodamientos y Repuestos del Caribe
         </p>
       </div>
     </footer>
 
     <script src="./index.js"></script>
-    >
+    
   </body>
 </html>
