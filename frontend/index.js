@@ -24,6 +24,15 @@
     form.reset();
   });*/
 
+  document.addEventListener("DOMContentLoaded", () => {
+  const toggleButton = document.querySelector(".header__nav-menu-toggle");
+  const navList = document.querySelector(".header__nav-list");
+
+  toggleButton.addEventListener("click", () => {
+    navList.classList.toggle("open");
+  });
+});
+
 function function__bearings() {
   window.location.href = "medidor.html#meter__container";
 }
