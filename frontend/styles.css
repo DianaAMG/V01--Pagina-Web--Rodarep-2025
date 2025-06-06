@@ -11,7 +11,6 @@ body {
   width: 100%;
 }
 
-
 .header__nav-menu-toggle {
   display: none;
   font-size: 2rem;
@@ -21,7 +20,6 @@ body {
   cursor: pointer;
   z-index: 15;
 }
-
 
 .header {
   width: 100%;
@@ -73,7 +71,6 @@ body {
   text-decoration-thickness: 0.063rem; /* ≈ 1px si 1rem = 16px */
   text-underline-offset: 0.98rem; /* ≈ 15px si 1rem = 16px */
 }
-
 
 .space {
   background-color: #ffffff;
@@ -129,6 +126,7 @@ body {
   font-weight: normal;
   font-size: 1.25rem; /* ≈ 20px si 1rem = 16px */
   color: #1d242d;
+  text-align: center;
 }
 
 .portfolio {
@@ -198,7 +196,7 @@ body {
 }
 
 .make {
-   width: 100%;
+  width: 100%;
   height: calc(100vh - 50px);
   display: flex;
   flex-direction: column;
@@ -464,7 +462,7 @@ body {
 
 .contact-us__head {
   width: 80%;
-  height: 80px;
+  height: 5rem; /* ≈ 80px si 1rem = 16px */
   display: flex;
   align-items: center;
   gap: 0.625rem; /* ≈ 10px si 1rem = 16px */
@@ -904,11 +902,20 @@ input::-webkit-inner-spin-button {
 
 /* Estilos Celulares (hasta 767px)  */
 
-@media screen and (min-width:0px) and (max-width: 435px) {
+@media screen and (max-width: 434px) {
+  body {
+    margin: 0;
+    max-width: 27.188rem; /* ≈ 435px si 1rem = 16px */
+    width: 100%;
+  }
 
+  .header {
+    width: 100%;
+    position: relative;
+  }
   .header__nav {
     width: 95%;
-    align-items: center
+    align-items: center;
   }
 
   .header__nav-menu-toggle {
@@ -919,7 +926,7 @@ input::-webkit-inner-spin-button {
     display: none;
     flex-direction: column;
     position: relative;
-    top: 100%;
+    top: 0%;
     right: 0;
     background-color: #0a4cc5;
     width: 50%;
@@ -933,5 +940,305 @@ input::-webkit-inner-spin-button {
 
   .header__nav-list-card {
     margin: 0.5rem 1rem;
+  }
+  .start__title {
+    font-size: 1.5rem; /* ≈ 60px si 1rem = 16px */
+  }
+
+  .start {
+    height: 85%;
+  }
+
+  .start__subtitle {
+    font-size: 0.75rem; /* ≈ 20px si 1rem = 16px */
+  }
+
+  .start__container {
+    width: 90%;
+    height: 35%;
+  }
+
+  .start__container-star {
+    height: 13.125rem; /* ≈ 210px si 1rem = 16px */
+  }
+
+  .space {
+    height: 0rem; /* ≈ 50px si 1rem = 16px */
+  }
+
+  .portfolio {
+    height: 13.125rem; /* ≈ 210px si 1rem = 16px */
+  }
+
+  .products {
+    width: 90%;
+    height: 80%;
+  }
+
+  .portfolio__title {
+    font-size: 1.2rem; /* ≈ 25px si 1rem = 16px */
+  }
+  .container {
+    /* gap: 1.563rem; /* ≈ 25px si 1rem = 16px */
+  }
+
+  .make {
+    height: 13.125rem;
+  }
+
+  .make_container {
+    height: 11rem;
+  }
+  .make_content {
+    width: 16.5rem;
+    height: 13.125rem;
+    margin-right: 2.125rem;
+  }
+
+  .make_content-block {
+    gap: 0.4rem;
+    padding: 1.1rem;
+  }
+
+  .make_content-title {
+    font-size: 1.813rem;
+  }
+  .make_content-text {
+    font-size: 0.6rem;
+  }
+
+  .button__make-content {
+    width: 7.5rem;
+    height: 1.813rem;
+    font-size: 0.5rem;
+  }
+
+  .choose-us {
+    height: 13.125rem;
+  }
+
+  .choose-us__title {
+    height: 3.438rem;
+    font-size: 3.375rem;
+  }
+
+  .choose-us__subtitle {
+    font-size: 1.438rem;
+  }
+  .choose-us__description {
+    font-size: 0.55rem;
+    text-align: center;
+  }
+
+  .choose-us__items {
+    height: 35%;
+  }
+
+  .choose-us__icon--experiencee {
+    width: 1.8rem;
+    height: 1.8rem;
+  }
+
+  .choose-us__icon--variety {
+    width: 1.8rem;
+    height: 1.8rem;
+  }
+
+  .choose-us__icon--price {
+    width: 1.8rem;
+    height: 1.8rem;
+  }
+
+  .choose-us__icon--shipping {
+    width: 1.8rem;
+    height: 1.8rem;
+  }
+
+  .choose-us__icon--text {
+    font-size: 0.5rem;
+  }
+
+  .measure {
+    min-height: 13.125rem;
+  }
+
+  .measure__content {
+    width: 83%;
+  }
+
+  .measure__block {
+    height: 13.25rem;
+    padding: 0.625rem; /* ≈ 10px si 1rem = 16px */
+  }
+
+  .measure__text {
+    width: 11.5rem;
+    gap: 1.25rem; /* ≈ 20px si 1rem = 16px */
+    padding: 0;
+  }
+
+  .measure__info {
+    font-size: 0.8rem;
+  }
+
+  .measure__block--bearings {
+    width: -7.5rem;
+    height: 8.25rem;
+  }
+
+  .measure__bearings--text {
+    font-size: 1.4rem;
+  }
+
+  .measure__content {
+    width: 83%;
+    gap: 1.5rem;
+  }
+
+  .measure__container {
+    height: 11rem;
+  }
+
+  .contact-us {
+    height: 14rem;
+  }
+
+  .contact-us__head {
+    width: 79%;
+    height: 40px;
+  }
+
+  .contact-us__line {
+    width: 100%;
+    height: 0.125rem;
+  }
+
+  .contact-us__title {
+    font-size: 2.8rem;
+  }
+  .contact-us__head {
+    width: 79%;
+    height: 40px;
+  }
+  .contact-us__main {
+    width: 95%;
+    height: 85%;
+  }
+
+  .contact-us__form-main {
+    width: 60%;
+    gap: 0.8rem;
+    justify-content: start;
+  }
+
+  .contact-us__communication {
+    width: 100%;
+    height: 0.8rem;
+  }
+
+  .contact-us__container-icons {
+    width: 45%;
+  }
+
+  .contact-us__communication-text {
+    font-size: 0.38rem;
+  }
+
+  .contact-us__container-icons {
+    width: 40%;
+  }
+
+  .contact-us__form {
+    gap: 0.313rem;
+  }
+
+  .contact-us__button {
+    width: 6.5rem;
+    height: 2.813rem;
+    font-size: 0.7rem;
+  }
+  .contact-us__form-main {
+    width: 60%;
+    gap: 0.5rem; /* ≈ 8px si 1rem = 16px */
+  }
+
+  .contact-us__location {
+    width: 30%;
+    height: 95%;
+  }
+
+  .contact-us__maps {
+    height: 87%;
+    gap: 0.5rem; /* ≈ 8px si 1rem = 16px */
+  }
+
+  .contact-us__location-text {
+    font-size: 0.5rem;
+  }
+
+  .contact-us__maps-url {
+    height: 55%;
+  }
+
+  .contact-us__location-text {
+    font-size: 0.5rem;
+  }
+
+  .contact-us__maps {
+    height: 87%;
+    gap: 0.5rem; /* ≈ 8px si 1rem = 16px */
+  }
+
+  .contact-us__location {
+    width: 30%;
+    height: 95%;
+  }
+
+  .contact-us__main {
+    width: 95%;
+    height: 85%;
+  }
+
+  .copyright__text {
+    font-size: 0.65rem;
+  }
+
+  .contact-us__container-maps--icon {
+    width: 0;
+    height: 0;
+  }
+  .contact-us__icon--mail {
+    width: 0;
+    height: 0;
+  }
+
+  .contact-us__icon--call {
+    width: 0;
+    height: 0;
+  }
+
+  .meter-calculator__block {
+    height: 35%;
+  }
+
+  .meter__container {
+    height: 13.125rem;
+    margin-top: 0.2rem;
+  }
+  .meter-calculator__container-head {
+    height: 11.25rem;
+  }
+
+  .meter-calculator__block {
+    height: 6.25rem;
+  }
+
+  .meter-calculator__title {
+    font-size: 1.5rem;
+  }
+
+  .meter-calculator__subtitle {
+    font-size: 0.75rem;
+    text-align: center;
   }
 }
