@@ -31,7 +31,21 @@
   toggleButton.addEventListener("click", () => {
     navList.classList.toggle("open");
   });
+   // Cierra el menú al hacer clic en un enlace y guarda la sección
+  const navLinks = document.querySelectorAll(".header__nav-link");
+
+  navLinks.forEach(link => {
+    link.addEventListener("click", () => {
+      // Cerrar el menú hamburguesa
+      navList.classList.remove("open");
+
+      // Guardar la sección en localStorage
+      const href = link.getAttribute("href");
+      localStorage.setItem("ultimaSeccion", href);
+    });
+  });
 });
+
 
 function function__bearings() {
   window.location.href = "medidor.html#meter__container";
