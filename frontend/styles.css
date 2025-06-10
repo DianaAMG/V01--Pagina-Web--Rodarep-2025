@@ -48,7 +48,7 @@ body {
 
 .header__nav-list {
   display: flex;
-  gap: 2.25rem; /* ≈ 32px si 1rem = 16px */
+  gap: 1.2rem; /* ≈ 32px si 1rem = 16px */
 }
 
 .header__nav-list-card {
@@ -829,11 +829,11 @@ input::-webkit-inner-spin-button {
 }
 
 .meter__calculator-result-head {
-  width: 30%;
+  width: 38%;
   display: flex;
   align-items: center;
   flex-direction: column;
-  gap: 0.625rem; /* ≈ 10px si 1rem = 16px */
+  gap: 1.6rem; /* ≈ 10px si 1rem = 16px */
 }
 
 .meter__calculator-result {
@@ -900,9 +900,8 @@ input::-webkit-inner-spin-button {
   background-color: #ffd5b6;
 }
 
-/* Estilos Celulares (hasta 767px)  */
-
-@media screen and (max-width: 434px) {
+/* Estilos Celulares (hasta 434px)  */
+@media screen and (min-width: 360px) and (max-width: 434px) {
   body {
     margin: 0;
     max-width: 27.188rem; /* ≈ 435px si 1rem = 16px */
@@ -911,8 +910,9 @@ input::-webkit-inner-spin-button {
 
   .header {
     width: 100%;
-    position: relative;
+    position: fixed;
   }
+
   .header__nav {
     width: 95%;
     align-items: center;
@@ -925,13 +925,15 @@ input::-webkit-inner-spin-button {
   .header__nav-list {
     display: none;
     flex-direction: column;
-    position: relative;
-    top: 0%;
+    position: absolute;
+    top: 3rem;
     right: 0;
     background-color: #0a4cc5;
-    width: 50%;
+    width: 100vw;
+    height: calc(100vh - 3rem);
     padding: 1rem 0;
     z-index: 10;
+    align-items: center;
   }
 
   .header__nav-list.open {
@@ -939,10 +941,11 @@ input::-webkit-inner-spin-button {
   }
 
   .header__nav-list-card {
-    margin: 0.5rem 1rem;
+    margin: 0.3rem;
+    font-size: 1.35rem;
   }
   .start__title {
-    font-size: 1.5rem; /* ≈ 60px si 1rem = 16px */
+    font-size: 2.2rem; /* ≈ 60px si 1rem = 16px */
   }
 
   .start {
@@ -950,108 +953,138 @@ input::-webkit-inner-spin-button {
   }
 
   .start__subtitle {
-    font-size: 0.75rem; /* ≈ 20px si 1rem = 16px */
+    font-size: 1rem; /* ≈ 20px si 1rem = 16px */
+    padding: 1rem;
   }
 
   .start__container {
     width: 90%;
-    height: 35%;
+    height: 50%;
   }
 
   .start__container-star {
-    height: 13.125rem; /* ≈ 210px si 1rem = 16px */
+    width: 100vw;
+    height: calc(100vh - 3.8rem);
   }
 
   .space {
-    height: 0rem; /* ≈ 50px si 1rem = 16px */
+    height: 5rem; /* ≈ 50px si 1rem = 16px */
   }
 
   .portfolio {
-    height: 13.125rem; /* ≈ 210px si 1rem = 16px */
+    width: 100vw;
+    height: calc(100vh - 3.8rem);
   }
 
+  .container {
+    width: 75%;
+    flex-direction: column;
+    height: 70%;
+    align-items: center;
+    justify-content: space-evenly;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 0.5rem;
+  }
+
+  .portfolio__products {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+  }
+  .portfolio__title {
+    font-size: 1.2rem; /* ≈ 25px si 1rem = 16px */
+    margin: 0rem;
+  }
   .products {
-    width: 90%;
+    width: 60%;
     height: 80%;
   }
 
-  .portfolio__title {
-    font-size: 1.2rem; /* ≈ 25px si 1rem = 16px */
-  }
   .container {
+    width: 100%;
     /* gap: 1.563rem; /* ≈ 25px si 1rem = 16px */
   }
 
   .make {
-    height: 13.125rem;
+    width: 100vw;
+    height: calc(100vh - 3.125rem);
   }
 
   .make_container {
-    height: 11rem;
+    height: 80%;
   }
   .make_content {
     width: 16.5rem;
-    height: 13.125rem;
+    height: 26.8rem;
     margin-right: 2.125rem;
+    justify-content: space-evenly;
   }
 
   .make_content-block {
-    gap: 0.4rem;
+    gap: 1.2rem;
     padding: 1.1rem;
   }
 
   .make_content-title {
-    font-size: 1.813rem;
+    font-size: 2.7rem;
+    align-items: center;
   }
   .make_content-text {
-    font-size: 0.6rem;
+    font-size: 0.8rem;
   }
 
   .button__make-content {
     width: 7.5rem;
-    height: 1.813rem;
-    font-size: 0.5rem;
+    font-size: 0.8rem;
   }
 
   .choose-us {
-    height: 13.125rem;
+    height: calc(100vh - 3.125rem);
   }
 
+  .choose-us__text {
+    padding: 0rem;
+  }
   .choose-us__title {
-    height: 3.438rem;
-    font-size: 3.375rem;
+    height: 3.8rem;
+    font-size: 3.8rem;
   }
 
   .choose-us__subtitle {
     font-size: 1.438rem;
   }
   .choose-us__description {
-    font-size: 0.55rem;
+    font-size: 0.8rem;
     text-align: center;
   }
 
   .choose-us__items {
-    height: 35%;
+    height: 41%;
+    flex-direction: column;
+    gap: 1.5rem;
   }
 
   .choose-us__icon--experiencee {
-    width: 1.8rem;
-    height: 1.8rem;
+    width: 1.5rem;
+    height: 1.5rem;
   }
 
   .choose-us__icon--variety {
-    width: 1.8rem;
-    height: 1.8rem;
+    width: 1.5rem;
+    height: 1.5rem;
   }
 
   .choose-us__icon--price {
-    width: 1.8rem;
-    height: 1.8rem;
+    width: 1.5rem;
+    height: 1.5rem;
   }
 
   .choose-us__icon--shipping {
-    width: 1.8rem;
-    height: 1.8rem;
+    width: 1.5rem;
+    height: 1.5rem;
   }
 
   .choose-us__icon--text {
@@ -1059,21 +1092,17 @@ input::-webkit-inner-spin-button {
   }
 
   .measure {
-    min-height: 13.125rem;
-  }
-
-  .measure__content {
-    width: 83%;
+    height: calc(100vh - 3.125rem);
   }
 
   .measure__block {
-    height: 13.25rem;
-    padding: 0.625rem; /* ≈ 10px si 1rem = 16px */
+    height: 25.84rem;
+    padding: 0.625rem;
   }
 
   .measure__text {
-    width: 11.5rem;
-    gap: 1.25rem; /* ≈ 20px si 1rem = 16px */
+    width: 12rem;
+    gap: 2.25rem;
     padding: 0;
   }
 
@@ -1087,20 +1116,20 @@ input::-webkit-inner-spin-button {
   }
 
   .measure__bearings--text {
-    font-size: 1.4rem;
+    font-size: 1.2rem;
   }
 
   .measure__content {
-    width: 83%;
+    width: 95%;
     gap: 1.5rem;
   }
 
   .measure__container {
-    height: 11rem;
+    height: 80%;
   }
 
   .contact-us {
-    height: 14rem;
+    height: calc(100vh - 3.8rem);
   }
 
   .contact-us__head {
@@ -1122,13 +1151,18 @@ input::-webkit-inner-spin-button {
   }
   .contact-us__main {
     width: 95%;
-    height: 85%;
+    height: 92%;
+    flex-direction: column;
+    gap: 0;
+    justify-content: center;
+    align-items: center;
   }
 
   .contact-us__form-main {
-    width: 60%;
+    width: 98%;
+    height: 50%;
     gap: 0.8rem;
-    justify-content: start;
+    justify-content: center;
   }
 
   .contact-us__communication {
@@ -1141,11 +1175,7 @@ input::-webkit-inner-spin-button {
   }
 
   .contact-us__communication-text {
-    font-size: 0.38rem;
-  }
-
-  .contact-us__container-icons {
-    width: 40%;
+    font-size: 0.45rem;
   }
 
   .contact-us__form {
@@ -1162,11 +1192,25 @@ input::-webkit-inner-spin-button {
     gap: 0.5rem; /* ≈ 8px si 1rem = 16px */
   }
 
+  .contact-us__registration {
+    width: 95%;
+    height: 7.5rem;
+  }
+  .contact-us__message {
+    width: 95%;
+    height: 8.375rem;
+  }
   .contact-us__location {
     width: 30%;
     height: 95%;
   }
 
+  .contact-us__button {
+    width: 4.5rem;
+    height: 8.813rem;
+    font-size: 0.8rem;
+  }
+
   .contact-us__maps {
     height: 87%;
     gap: 0.5rem; /* ≈ 8px si 1rem = 16px */
@@ -1176,17 +1220,21 @@ input::-webkit-inner-spin-button {
     font-size: 0.5rem;
   }
 
-  .contact-us__maps-url {
-    height: 55%;
+  .contact-us__location {
+    width: 66%;
+    /* height: 103%; */
+    align-items: center;
+    justify-content: center;
+  }
+
+  .contact-us__maps {
+    height: 100%;
+    gap: 0;
+    justify-content: space-evenly;
   }
 
   .contact-us__location-text {
     font-size: 0.5rem;
-  }
-
-  .contact-us__maps {
-    height: 87%;
-    gap: 0.5rem; /* ≈ 8px si 1rem = 16px */
   }
 
   .contact-us__location {
@@ -1197,6 +1245,15 @@ input::-webkit-inner-spin-button {
   .contact-us__main {
     width: 95%;
     height: 85%;
+  }
+
+  .contact-us__form-main {
+    width: 100%;
+    gap: 0.5rem;
+  }
+
+  .contact-us__location {
+    width: 65%;
   }
 
   .copyright__text {
@@ -1241,4 +1298,486 @@ input::-webkit-inner-spin-button {
     font-size: 0.75rem;
     text-align: center;
   }
+
+  .meter__calculator {
+    height: 21.688rem; /* ≈ 347px si 1rem = 16px */
+    gap: 1rem;
+  }
+
+  .meter__calculator-container {
+    height: 97%;
+  }
+
+  .meter__measures {
+    width: 37%;
+    height: 99%;
+  }
+
+  .meter__measures-subtitle {
+    font-size: 1.3rem;
+    text-align: center;
+    line-height: 1.5rem;
+    padding: 0.2rem;
+  }
+
+  .meter__insert-measure {
+    gap: 0rem; /* ≈ 2px si 1rem = 16px */
+  }
+
+  .meter__measure-text {
+    font-size: 0.44rem;
+
+    text-align: center;
+  }
+
+  .meter__measure-description {
+    font-size: 0.45rem;
+
+    text-align: center;
+  }
+
+  .meter__measure-container {
+    width: 3rem;
+    height: 3rem;
+  }
+
+  .button__meter-measure {
+    width: 5.5rem;
+    height: 1.8rem;
+    font-size: 0.65rem;
+  }
+
+  .meter__calculator-result-head {
+    width: 50%;
+    gap: 0.6rem;
+  }
+
+  .meter__measures-subtitle {
+    font-size: 1.3rem;
+    text-align: center;
+    line-height: 1.5rem;
+    padding: 0.2rem;
+  }
+
+  .meter__container-result {
+    height: 5.938rem;
+  }
+
+  .meter__calculator-information {
+    height: 7.125rem;
+  }
+
+  .button__quote {
+    width: 8.5rem;
+    height: 1.8rem;
+    font-size: 0.65rem;
+  }
+
+  .meter__insert-measure {
+    gap: 0rem;
+  }
+}
+/* Estilos Tablets (desde 435px hasta  1.024px)
+)  */
+@media screen and (min-width: 435px) and (max-width: 1024px) {
+  body {
+    margin: 0;
+    max-width: 64rem; /* ≈ 1.24px si 1rem = 16px */
+    width: 100%;
+  }
+
+  .header {
+    width: 100%;
+  }
+
+  .header__nav {
+    width: 95%;
+    align-items: center;
+  }
+
+  .header__nav-menu-toggle {
+    display: block;
+  }
+
+  .header__nav-list {
+    display: none;
+    flex-direction: column;
+    position: relative;
+    top: 15rem;
+    right: 0;
+    background-color: #0a4cc5;
+    width: 50%;
+    padding: 1rem 0;
+    z-index: 10;
+  }
+
+  .header__nav-list.open {
+    display: flex;
+  }
+
+  .header__nav-list-card {
+    margin: 0.5rem 1rem;
+  }
+  .start__title {
+    font-size: 2rem;
+  }
+
+  .start {
+    height: 85%;
+  }
+
+  .start__subtitle {
+    font-size: 1.2rem;
+  }
+
+  .start__container {
+    width: 90%;
+    height: 50%;
+  }
+
+  .start__container-star {
+    height: 20.125rem; /* ≈ 210px si 1rem = 16px */
+  }
+
+  .space {
+    height: 5rem;
+  }
+
+  .portfolio {
+    height: 23.125rem; /* ≈ 210px si 1rem = 16px */
+  }
+
+  .products {
+    width: 90%;
+    height: 80%;
+  }
+
+  .portfolio__title {
+    font-size: 1.2rem; /* ≈ 25px si 1rem = 16px */
+  }
+  .container {
+    /* gap: 1.563rem; /* ≈ 25px si 1rem = 16px */
+  }
+
+  .make {
+    height: 20.125rem;
+  }
+
+  .make_container {
+    height: 17rem;
+  }
+  .make_content {
+    width: 22.5rem;
+    height: 20.125rem;
+    margin-right: 2.125rem;
+  }
+
+  .make_content-block {
+    gap: 0.9rem;
+    padding: 1.1rem;
+  }
+
+  .make_content-title {
+    font-size: 2.813rem;
+  }
+  .make_content-text {
+    font-size: 0.8rem;
+  }
+
+  .button__make-content {
+    width: 8.5rem;
+    height: 2.813rem;
+    font-size: 0.8rem;
+  }
+
+  .choose-us {
+    height: 23.125rem;
+  }
+
+  .choose-us__title {
+    height: 6.438rem;
+    font-size: 6.375rem;
+  }
+
+  .choose-us__subtitle {
+    font-size: 2.438rem;
+  }
+  .choose-us__description {
+    font-size: 0.98rem;
+    text-align: center;
+  }
+  .choose-u__option {
+    gap: 0.625rem;
+  }
+  .choose-us__items {
+    height: 60%;
+  }
+
+  .choose-us__icon--experiencee {
+    width: 3.8rem;
+    height: 3.8rem;
+  }
+
+  .choose-us__icon--variety {
+    width: 3.8rem;
+    height: 3.8rem;
+  }
+
+  .choose-us__icon--price {
+    width: 3.8rem;
+    height: 3.8rem;
+  }
+
+  .choose-us__icon--shipping {
+    width: 3.8rem;
+    height: 3.8rem;
+  }
+
+  .choose-us__icon--text {
+    font-size: 0.8rem;
+  }
+
+  .measure {
+    min-height: 20.125rem;
+  }
+
+  .measure__content {
+    width: 100%;
+    gap: 1.2rem;
+    justify-content: space-evenly;
+  }
+
+  .measure__block {
+    height: 20.25rem;
+    padding: 1.625rem; /* ≈ 10px si 1rem = 16px */
+  }
+
+  .measure__text {
+    width: 14.5rem;
+    gap: 2.25rem; /* ≈ 20px si 1rem = 16px */
+    padding: 0;
+  }
+
+  .measure__info {
+    font-size: 1rem;
+  }
+
+  .measure__block--bearings {
+    height: 8.25rem;
+  }
+
+  .measure__bearings--text {
+    font-size: 1.7rem;
+  }
+
+  .measure__container {
+    height: 17rem;
+  }
+
+  .contact-us {
+    height: 23.125rem;
+  }
+
+  .contact-us__head {
+    width: 79%;
+    height: 17%;
+  }
+
+  .contact-us__line {
+    width: 100%;
+    height: 0.125rem;
+  }
+
+  .contact-us__title {
+    font-size: 3.8rem;
+  }
+
+  .contact-us__main {
+    width: 95%;
+    height: 85%;
+  }
+
+  .contact-us__form-main {
+    width: 60%;
+    gap: 0.8rem;
+    justify-content: start;
+  }
+
+  .contact-us__communication {
+    width: 100%;
+    height: 0.8rem;
+  }
+
+  .contact-us__container-icons {
+    width: 40%;
+  }
+
+  .contact-us__communication-text {
+    font-size: 0.6rem;
+  }
+
+  .contact-us__container-icons {
+    width: 40%;
+  }
+
+  .contact-us__form {
+    gap: 0.313rem;
+  }
+
+  .contact-us__button {
+    width: 10.5rem;
+    height: 2.813rem;
+    font-size: 1rem;
+  }
+  .contact-us__form-main {
+    width: 60%;
+    gap: 0.5rem; /* ≈ 8px si 1rem = 16px */
+  }
+
+  .contact-us__location {
+    width: 30%;
+    height: 95%;
+  }
+
+  .contact-us__maps {
+    height: 87%;
+    gap: 0.5rem; /* ≈ 8px si 1rem = 16px */
+  }
+
+  .contact-us__location-text {
+    font-size: 0.6rem;
+  }
+
+  .contact-us__maps-url {
+    height: 55%;
+  }
+
+  .contact-us__main {
+    width: 95%;
+    height: 85%;
+  }
+
+  .copyright__text {
+    font-size: 0.9rem;
+  }
+
+  .contact-us__container-maps--icon {
+    width: 0;
+    height: 0;
+  }
+  .contact-us__icon--mail {
+    width: 0;
+    height: 0;
+  }
+
+  .contact-us__icon--call {
+    width: 0;
+    height: 0;
+  }
+
+  .meter-calculator__block {
+    height: 35%;
+  }
+
+  .meter__container {
+    height: 13.125rem;
+    margin-top: 0.2rem;
+  }
+  .meter-calculator__container-head {
+    height: 11.25rem;
+  }
+
+  .meter-calculator__block {
+    height: 6.25rem;
+  }
+
+  .meter-calculator__title {
+    font-size: 1.5rem;
+  }
+
+  .meter-calculator__subtitle {
+    font-size: 0.75rem;
+    text-align: center;
+  }
+
+  .meter__calculator {
+    height: 21.688rem; /* ≈ 347px si 1rem = 16px */
+    gap: 1rem;
+  }
+
+  .meter__calculator-container {
+    height: 97%;
+  }
+
+  .meter__measures {
+    width: 36%;
+    height: 99%;
+  }
+
+  .meter__measures-subtitle {
+    font-size: 1.9rem;
+    text-align: center;
+    line-height: 1.5rem;
+    padding: 0.2rem;
+  }
+
+  .meter__insert-measure {
+    gap: 0rem; /* ≈ 2px si 1rem = 16px */
+  }
+
+  .meter__measure-text {
+    font-size: 0.44rem;
+    text-align: center;
+  }
+
+  .meter__measure-description {
+    font-size: 0.45rem;
+
+    text-align: center;
+  }
+
+  .meter__measure-container {
+    width: 3rem;
+    height: 3rem;
+  }
+
+  .button__meter-measure {
+    width: 5.5rem;
+    height: 1.8rem;
+    font-size: 0.65rem;
+  }
+
+  .meter__calculator-result-head {
+    gap: 0.6rem;
+    margin-top: 0.8rem;
+  }
+}
+
+.meter__measures-subtitle {
+  font-size: 1.3rem;
+  text-align: center;
+  line-height: 1.5rem;
+  padding: 0.2rem;
+}
+
+.meter__container-result {
+  height: 5.938rem;
+}
+
+.meter__calculator-information {
+  height: 7.125rem;
+}
+
+.button__quote {
+  width: 8.5rem;
+  height: 1.8rem;
+  font-size: 0.65rem;
+}
+
+.meter__insert-measure {
+  gap: 0rem;
+}
+
+.space__meter {
+  height: 1rem;
 }
