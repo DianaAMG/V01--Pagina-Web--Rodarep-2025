@@ -918,7 +918,7 @@ input::-webkit-inner-spin-button {
 }
 
 /* Estilos Celulares (hasta 434px)  */
-@media screen and (min-width: 360px) and (max-width: 434px) and (min-height: 422px) {
+@media screen and (min-width: 360px) and (max-width: 434px) and (min-height: 600px) {
   body {
     margin: 0;
     max-width: 27.188rem; /* ≈ 435px si 1rem = 16px */
@@ -955,6 +955,7 @@ input::-webkit-inner-spin-button {
 
   .header__nav-list.open {
     display: flex;
+    gap: 2rem;
   }
 
   .header__nav-list-card {
@@ -1086,23 +1087,23 @@ input::-webkit-inner-spin-button {
   }
 
   .choose-us__icon--experiencee {
-    width: 1.5rem;
-    height: 1.5rem;
+    width: 2.5rem;
+    height: 2.5rem;
   }
 
   .choose-us__icon--variety {
-    width: 1.5rem;
-    height: 1.5rem;
+    width: 2.5rem;
+    height: 2.5rem;
   }
 
   .choose-us__icon--price {
-    width: 1.5rem;
-    height: 1.5rem;
+    width: 2.5rem;
+    height: 2.5rem;
   }
 
   .choose-us__icon--shipping {
-    width: 1.5rem;
-    height: 1.5rem;
+    width: 2.5rem;
+    height: 2.5rem;
   }
 
   .choose-us__icon--text {
@@ -1241,13 +1242,13 @@ input::-webkit-inner-spin-button {
   }
 
   .contact-us__icon--mail {
-    width: 0;
-    height: 0;
+    width: 1.5rem;
+    height: 1.5rem;
   }
 
   .contact-us__icon--call {
-    width: 0;
-    height: 0;
+    width: 1.5rem;
+    height: 1.5rem;
   }
 
   .contact-us__location {
