@@ -69,7 +69,7 @@ document
       .getElementById("button__quote")
       .addEventListener("click", function () {
         window.open(
-          `https://api.whatsapp.com/send?phone=573167437807&text=Hola,%20quiero%20conocer%20el%20valor%20del%20rodamiento%20REF:%20${encodeURIComponent(
+          `https://api.whatsapp.com/send?phone=573167094447&text=Hola,%20quiero%20conocer%20el%20valor%20del%20rodamiento%20REF:%20${encodeURIComponent(
             informationsBearings.ref
           )}`,
           "_blank"
