@@ -52,15 +52,18 @@ function function__bearings() {
 }
 
 function function__movement(){
-  window.open("http://rodarep.com/categoria-producto/transmision/?v=ab6c04006660", "_blank");
+  window.open("https://api.whatsapp.com/send?phone=573167094447&text=Hola,estoy%20buscando%20más%20información%20de%20sus%20rodamientos", "_blank");
+  /*window.open("http://rodarep.com/categoria-producto/transmision/?v=ab6c04006660", "_blank");*/
 }
 
 function function__retentores() {
-  window.open("http://rodarep.com/categoria-producto/sellado-proteccion/?v=ab6c04006660", "_blank");
+  window.open("https://api.whatsapp.com/send?phone=573167094447&text=Hola,estoy%20buscando%20más%20información%20de%20sus%20retenedores", "_blank");
+  /*window.open("http://rodarep.com/categoria-producto/sellado-proteccion/?v=ab6c04006660", "_blank");*/
 }
 
 function function__soport(){
-  window.open("http://rodarep.com/categoria-producto/soportes-y-montaje/?v=ab6c04006660", "_blank");
+  window.open("https://api.whatsapp.com/send?phone=573167094447&text=Hola,estoy%20buscando%20más%20información%20de%20sus%20chumaceras", "_blank");
+  /*window.open("http://rodarep.com/categoria-producto/soportes-y-montaje/?v=ab6c04006660", "_blank");*/
 }
 
 
