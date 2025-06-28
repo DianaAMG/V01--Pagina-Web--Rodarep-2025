@@ -1020,7 +1020,7 @@ input::-webkit-inner-spin-button {
 
   .make_content {
     width: 16.5rem;
-    height: 26.8rem;
+    height: 23.5rem;
     margin-right: 2.125rem;
     justify-content: space-evenly;
   }
@@ -1106,7 +1106,7 @@ input::-webkit-inner-spin-button {
   }
 
   .measure__block {
-    height: 26rem;
+    height: 23.5rem;
     padding: 0.5rem;
   }
 
