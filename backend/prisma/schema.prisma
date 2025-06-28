@@ -1,12 +1,5 @@
-// This is your Prisma schema file,
-// learn more about it in the docs: https://pris.ly/d/prisma-schema
-
-// Looking for ways to speed up your queries, or scale easily with your serverless or edge functions?
-// Try Prisma Accelerate: https://pris.ly/cli/accelerate-init
-
 generator client {
   provider = "prisma-client-js"
-  // output   = "../generated/prisma"*//
 }
 
 datasource db {
@@ -15,22 +8,22 @@ datasource db {
 }
 
 model user_contact {
-  id        Int      @id @default(autoincrement())
   name      String
   email     String   @unique
   phone     String
+  createdAt DateTime @default(now()) @db.Timestamptz(6)
+  updatedAt DateTime @updatedAt @db.Timestamptz(6)
+  id        Int      @id @default(autoincrement())
   message   String
- createdAt DateTime @default(now()) @db.Timestamptz
-  updatedAt DateTime @updatedAt @db.Timestamptz
 }
 
 model bearing {
-  id          Int      @id @default(autoincrement())
   d__internal Float
   d__external Float
-  b__width    Float
   code        String
   type        String
-   createdAt DateTime @default(now()) @db.Timestamptz
-  updatedAt DateTime @updatedAt @db.Timestamptz
+  createdAt   DateTime @default(now()) @db.Timestamptz(6)
+  updatedAt   DateTime @updatedAt @db.Timestamptz(6)
+  b__width    Float
+  id          Int      @id @default(autoincrement())
 }
