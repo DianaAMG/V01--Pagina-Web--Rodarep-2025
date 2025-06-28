@@ -1483,6 +1483,8 @@ input::-webkit-inner-spin-button {
   }
   .choose-us__items {
     height: 60%;
+    gap: 0.2rem;
+    justify-content: space-around;
 
   }
 
