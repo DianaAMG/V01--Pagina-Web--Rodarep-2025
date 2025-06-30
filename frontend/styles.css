@@ -1219,7 +1219,7 @@ input::-webkit-inner-spin-button {
   background-image: url(./img/contactanos__icono02.png);
 }
   .contact-us__location-text {
-    font-size: 0.5rem;
+    font-size: 1rem;
   }
 
   .contact-us__communication-text-title{
@@ -1256,7 +1256,7 @@ input::-webkit-inner-spin-button {
   }
 
   .copyright__text {
-    font-size: 0.65rem;
+    font-size: 1rem;
   }
 
   /*Estilos para medidor max 435 px*/
@@ -1516,7 +1516,6 @@ input::-webkit-inner-spin-button {
   }
   .choose-us__items {
     height: 60%;
-    gap: 0.2rem;
     justify-content: space-around;
   }
 
