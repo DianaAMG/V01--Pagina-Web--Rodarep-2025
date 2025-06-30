@@ -979,6 +979,7 @@ input::-webkit-inner-spin-button {
 
   .start__title {
     font-size: 2.2rem; /* ≈ 60px si 1rem = 16px */
+    padding: 1rem;
   }
 
   .start__subtitle {
@@ -1049,7 +1050,7 @@ input::-webkit-inner-spin-button {
     align-items: center;
   }
   .make_content-text {
-    font-size: 0.8rem;
+    font-size: 1rem;
   }
 
   .button__make-content {
@@ -1130,7 +1131,7 @@ input::-webkit-inner-spin-button {
   }
 
   .measure__info {
-    font-size: 0.8rem;
+    font-size: 1.2rem;
   }
 
   .measure__block--bearings {
