@@ -1083,7 +1083,7 @@ input::-webkit-inner-spin-button {
 
   .choose-us__items {
     flex-direction: column;
-    gap: 2rem;
+    gap: 3rem;
     justify-content: start;
   }
 
@@ -1108,7 +1108,7 @@ input::-webkit-inner-spin-button {
   }
 
   .choose-us__icon--text {
-    font-size: 0.5rem;
+    font-size: 0.8rem;
   }
 
   .measure {
