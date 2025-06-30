@@ -1083,8 +1083,8 @@ input::-webkit-inner-spin-button {
 
   .choose-us__items {
     flex-direction: column;
-    gap: 0.2rem;
-    justify-content: space-around;
+    gap: 2rem;
+    justify-content: start;
   }
 
   .choose-us__icon--experiencee {
