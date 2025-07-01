@@ -495,7 +495,9 @@ body {
   height: 100%;
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
+  justify-content: start;
+  gap: 2rem;
+  padding: 1rem;
 }
 
 .contact-us__container-icons {
@@ -513,6 +515,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+  gap: 1rem;
 }
 
 .contact-us__icon--call {
@@ -531,7 +534,7 @@ body {
   background-image: url(./img/contactanos__icono02.png);
 }
 
-.contact-us__communication-text-title{
+.contact-us__communication-text-title {
   margin-left: 0.313rem; /* ≈ 5px si 1rem = 16px */
   font-family: "Montserrat", sans-serif;
   font-weight: bold;
@@ -539,14 +542,40 @@ body {
   text-align: center;
   color: #ffffff;
   align-items: center;
-  padding-top: 1.5rem;
 }
 
 .contact-us__communication-text {
   margin-left: 0.313rem; /* ≈ 5px si 1rem = 16px */
   font-family: "Montserrat", sans-serif;
+  font-size: 1rem; /* ≈ 12px si 1rem = 16px */
+  text-align: center;
+  color: #ffffff;
+}
+
+.contact-us__timetable {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  color: #ffffff;
+  font-family: "Montserrat", sans-serif;
+}
+
+.contact-us__timetable-text {
+  font-size: 1.5rem;
+  text-align: center;
+  color: #ffffff;
   font-weight: bold;
-  font-size: 1.5rem; /* ≈ 12px si 1rem = 16px */
+}
+
+.contact-us__timetable-text-title {
+  padding-top: 1rem;
+  font-size: 1rem;
+  text-align: center;
+  color: #ffffff;
+  font-weight: bold;
+}
+.contact-us__timetable-text-subtitle {
+  font-size: 1rem;
   text-align: center;
   color: #ffffff;
 }
@@ -643,7 +672,7 @@ body {
 .contact-us__location-text {
   font-family: "Montserrat", sans-serif;
   font-weight: bold;
-  font-size: 0.75rem; /* ≈ 12px si 1rem = 16px */
+  font-size: 1rem; /* ≈ 12px si 1rem = 16px */
   color: #ffffff;
   text-align: center;
 }
@@ -1169,7 +1198,7 @@ input::-webkit-inner-spin-button {
     width: 95%;
     height: 92%;
     flex-direction: column;
-    gap: 0;
+    gap: 2rem;
     justify-content: center;
     align-items: center;
   }
@@ -1183,7 +1212,27 @@ input::-webkit-inner-spin-button {
   .contact-us__communication {
     width: 100%;
     height: 0.8rem;
+    gap: 1rem;
   }
+
+  .contact-us__timetable {
+     height: 60%;
+    padding: 2.5rem;
+
+}
+
+.contact-us__timetable-text {
+  font-size: 0.9rem;
+}
+
+.contact-us__timetable-text-title {
+    padding-top: 0.3rem;
+    font-size: 0.8rem;
+    padding-top: 0.8rem;
+}
+.contact-us__timetable-text-subtitle {
+  font-size: 0.5rem;
+}
 
   .contact-us__form {
     gap: 0.313rem;
@@ -1205,30 +1254,31 @@ input::-webkit-inner-spin-button {
   }
 
   .contact-us__icon--call {
-  width: 1.688rem; /* ≈ 27px si 1rem = 16px */
-  height: 1.688rem; /* ≈ 27px si 1rem = 16px */
-  display: flex;
-  align-items: center;
-  background-image: url(./img/contactanos__icono01.png);
-}
+    width: 1.688rem; /* ≈ 27px si 1rem = 16px */
+    height: 1.688rem; /* ≈ 27px si 1rem = 16px */
+    display: flex;
+    align-items: center;
+    background-image: url(./img/contactanos__icono01.png);
+  }
 
-.contact-us__icon--mail {
-  width: 1.563rem; /* ≈ 25px si 1rem = 16px */
-  height: 1.563rem; /* ≈ 25px si 1rem = 16px */
-  display: flex;
-  align-items: center;
-  background-image: url(./img/contactanos__icono02.png);
-}
+  .contact-us__icon--mail {
+    width: 1.563rem; /* ≈ 25px si 1rem = 16px */
+    height: 1.563rem; /* ≈ 25px si 1rem = 16px */
+    display: flex;
+    align-items: center;
+    background-image: url(./img/contactanos__icono02.png);
+  }
   .contact-us__location-text {
     font-size: 1rem;
   }
 
-  .contact-us__communication-text-title{
-  font-size: 0.70rem; /* ≈ 12px si 1rem = 16px */
-}
+  .contact-us__communication-text-title {
+    font-size: 0.7rem; /* ≈ 12px si 1rem = 16px */
+    padding: 0;
+  }
 
   .contact-us__communication-text {
-    font-size: 0.80rem;
+    font-size: 0.8rem;
   }
 
   .contact-us__message {
@@ -1399,6 +1449,8 @@ input::-webkit-inner-spin-button {
 
   .header__nav-list.open {
     display: flex;
+    justify-content: center;
+        gap: 2rem;
   }
 
   .header__nav-list-card {
@@ -1605,43 +1657,58 @@ input::-webkit-inner-spin-button {
 
   .contact-us__form-main {
     width: 60%;
-    gap: 0.8rem;
+    gap: 3.8rem;
     justify-content: start;
+    padding: 2rem;
   }
   .contact-us__communication {
     width: 100%;
     height: 0.8rem;
+    gap: 5rem;
   }
   .contact-us__container-icons {
     width: 40%;
   }
 
-
   .contact-us__icon--call {
-  width: 1.688rem; /* ≈ 27px si 1rem = 16px */
-  height: 1.688rem; /* ≈ 27px si 1rem = 16px */
-  display: flex;
-  align-items: center;
-  background-image: url(./img/contactanos__icono01.png);
-}
+    width: 1.688rem; /* ≈ 27px si 1rem = 16px */
+    height: 1.688rem; /* ≈ 27px si 1rem = 16px */
+    display: flex;
+    align-items: center;
+    background-image: url(./img/contactanos__icono01.png);
+  }
 
-.contact-us__icon--mail {
-  width: 1.563rem; /* ≈ 25px si 1rem = 16px */
-  height: 1.563rem; /* ≈ 25px si 1rem = 16px */
-  display: flex;
-  align-items: center;
-  background-image: url(./img/contactanos__icono02.png);
-}
+  .contact-us__icon--mail {
+    width: 1.563rem; /* ≈ 25px si 1rem = 16px */
+    height: 1.563rem; /* ≈ 25px si 1rem = 16px */
+    display: flex;
+    align-items: center;
+    background-image: url(./img/contactanos__icono02.png);
+  }
   .contact-us__location-text {
     font-size: 0.5rem;
   }
 
-  .contact-us__communication-text-title{
-  font-size: 0.70rem; /* ≈ 12px si 1rem = 16px */
-}
+  .contact-us__timetable-text{
+    font-size: 1.5rem;
+  }
+
+  .contact-us__timetable-text-title {
+    padding-top: 1rem;
+    font-size: 1.5rem;
+  }
+
+  .contact-us__timetable-text-subtitle {
+    font-size: 1.5rem;
+  }
+
+  .contact-us__communication-text-title {
+    font-size: 1.5rem; /* ≈ 12px si 1rem = 16px */
+    padding-top: 0;
+  }
 
   .contact-us__communication-text {
-    font-size: 0.80rem;
+    font-size: 1rem;
   }
   .contact-us__form {
     gap: 0.313rem;
@@ -1674,8 +1741,9 @@ input::-webkit-inner-spin-button {
 
   .contact-us__maps {
     height: 95%;
-    gap: 2rem; /* ≈ 8px si 1rem = 16px */
+    gap: 3rem; /* ≈ 8px si 1rem = 16px */
     justify-content: left;
+            padding: 1rem;
   }
 
   .contact-us__maps-url {
@@ -1683,7 +1751,7 @@ input::-webkit-inner-spin-button {
   }
 
   .contact-us__location-text {
-    font-size: 0.6rem;
+    font-size: 1rem;
   }
 
   .copyright__text {
