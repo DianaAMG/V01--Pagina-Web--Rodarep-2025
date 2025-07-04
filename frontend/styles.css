@@ -1206,7 +1206,7 @@ input::-webkit-inner-spin-button {
   .contact-us__form-main {
     width: 80%;
     height: 50%;
-    gap: 0.5rem;
+    gap: 5rem;
     justify-content: center;
   }
   .contact-us__communication {
@@ -1217,7 +1217,7 @@ input::-webkit-inner-spin-button {
 
   .contact-us__timetable {
      height: 60%;
-    padding: 2.5rem;
+    padding: 2rem;
 
 }
 
