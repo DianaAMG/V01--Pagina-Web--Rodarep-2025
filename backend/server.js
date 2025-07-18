@@ -27,3 +27,15 @@ app.get("/", (req, res) => {
 
 // Rutas de nuestro servidor
 app.use("/", userContactRoutes); // Usar las rutas de contacto de usuario
+
+
+// Solo iniciar el servidor si NO estamos en modo prueba
+if (process.env.NODE_ENV !== "test") {
+  const port = 3000;
+  app.listen(port, () => {
+    console.log(`Servidor escuchando en http://localhost:${port}`);
+  });
+}
+
+// Exportar la app para usarla en pruebas con Supertest
+module.exports = app;
